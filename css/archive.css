@@ -1,0 +1,305 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+  
+  
+.landingpage {
+  position: fixed;
+  width: 23%; /* Set to one-third of the screen width */
+  left: 0%;
+  top: 0;
+  height: 100vh;
+  /* background-color: #ebe3df; */
+}
+
+
+
+.mainpage {
+  position: relative;
+  width: 77%;
+  left: 18%;
+  top: 0;
+  height: auto;
+  display: inline-block;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: left; 
+  font-family: var(--font-sora);
+  /* background-color: #ebe3df; */
+  z-index: 1;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+
+
+.landingpage {
+  position: fixed;
+  width: 23%; /* Set to one-third of the screen width */
+  left: 0%;
+  top: 0;
+  height: 100vh;
+  /* background-color: #ebe3df; */
+}
+.mainpage {
+  position: fixed;
+  width: 78%;
+  left: 22.5%;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left; 
+  font-family: var(--font-sora);
+  /* background-color: #ebe3df; */
+  z-index: 1;
+}
+
+.project-name {
+  justify-content: center;
+  align-items: left; 
+  font-family: var(--font-sora);
+  /* background-color: #ebe3df; */
+}
+
+.project-name ul{
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  margin:0%;
+  line-height: 5vh;
+  width: 53%;
+  padding:0%;
+  top: 35%;
+  left: 25%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.project-name a{
+  color: #3d3631;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+
+
+}
+
+.project-name a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.recent, .old {
+  left:0;
+  pointer-events: none;
+
+}
+
+.vectorline {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+  
+.Sawmil, .forestry, .Vehicles , .motiongraphic   {
+  display: block;
+    
+}
+
+.Sawmil a {
+  pointer-events: none;
+
+}
+
+.Sawmil p, .forestry p, .Vehicles p, .motiongraphic p {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.skills {
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 34%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+
+}
+
+.work {
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 72%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+
+}
+
+
+.more a{
+  position: absolute;
+  /* display: block; */
+  top: 27%;
+  left: 105%;
+  transform: translate(100%, 0%);
+  /* margin-left: 20px; */
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: underline; /* or any decoration you prefer */
+
+}
+
+.p_name {
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 7%;
+  top:19.5%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+  font-weight: bold;
+  pointer-events: none;
+
+}
+
+.p_skill {
+  font-weight: bold;
+
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 31%;
+  top:19.5%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+  pointer-events: none;
+
+}
+
+.p_type {
+  font-weight: bold;
+
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 53%;
+  top:19.5%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+  pointer-events: none;
+
+}
+
+.p_more {
+  font-weight: bold;
+
+  position: absolute;
+  display: block;
+  /* top: auto; */
+  left: 75%;
+  top:19.5%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 20px; /* Adjust the margin as needed */
+  pointer-events: none;
+
+}
+
+.projectimage{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  /* background-color:black; */
+  z-index: -1;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 1;
+  pointer-events:none;
+}
+
+
+
+.dropdown-content p {
+  margin:1%;
+  display: inline-block;
+}
+
+/* Show the dropdown content when the dropdown is hovered */
+.dropdown:hover .dropdown-content  {
+  display: block;
+}
+
+.arrrow {
+  font-size: larger;
+  line-height: 10px;
+}
+
+
+.emptybox {
+  position: absolute;
+  width: 100%; /* Set to one-third of the screen width */
+  left: 65%;
+  transform: translate(-50%, -50%); 
+  top: 50%;
+  height: 40%;
+}
+
+.cubebox {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.box-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  margin: 10px;
+}
+
+
+.project-img {
+  width: 200px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+}
+
+
+
+

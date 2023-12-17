@@ -1,0 +1,282 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+
+    <link rel="stylesheet" href="./css/projectinfo.css" /> 
+
+    <link
+      rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen&display=swap">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@350&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap">
+    <title>MH Page</title>
+
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="./index.html#firstpage">JIHO KIM</a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+          <li>
+            <a href="./index.html#projects">SELECTED WORKS</a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+          <li>
+            <a href="./archive.html">ARCHIVE</a>
+          </li>
+          <li class="nextproject">
+            <a href="./jis.html">OTHER WORK: Judicial Interrogatory Simulator→</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+      
+    <div class="mainpage">
+      <div class="project-title">
+        <header class="name"> MetaHuman Shakespeare AR Edition</header>
+        <p class="type">Personal</p>
+        <p class="type">Thesis Project</p>
+        <p class="type">3D (Maya, Blender)</p>
+        <p class="type">Motion Capture</p>
+        <p class="type">Unreal Engine</p>
+        <p class="type">Handheld AR</p>
+        <p class="type">Summer, 2023 (3 Months)</p>
+
+      </div>
+      <img class="mainimg" alt="" src="./public/shakespeare_ar.png" />
+      <div class="description">
+        <p>
+          Metahumans are great tool in its high fidelity digital avatars that are photorealistic, fully rigged and easily customizable.
+          But, there has yet been a full integration of MetaHuman into AR and lack of research in it's capabilites within XR technology with motion integration.
+          This researched into MetaHumans and new-form of integration of MOCAP using PeelSolve and PeelCapture.
+
+        </p>
+        <p> 
+          For my senior thesis project: COGS 402, I did a design-research project that focused on understanding the capabilities and limitations of Metahuman used for XR immersive experience 
+          with motion capture and augmented reality. Further, researching into the application of virtual avatars/dopplegangers, and the interactions of Metahuman/digital human. 
+        </p>
+        <p>
+          This project stemmed from Shakespeare XR led by Dr. Patrick Pennefather.
+          With the objective to utilize MetaHuman from Unreal Engine and fully-integrated it with MOCAP technolgy to be used as an handheld AR tool
+          for the Shakespeare XR project.
+          <a href='https://eml.ubc.ca/projects/shakespeare-xr/'> View More↗</a>
+        </p>
+      </div>
+
+      <div class="description2">
+        <p>
+          The process involved three main steps:
+          Building MetaHuman 
+          MOCAP + MetaHuman
+          AR + Metahuman
+        </p>
+      </div>
+      <div class="image">
+        <img class="img" alt="" src="./public/metahuman/work-flow.jpg" />
+      </div>
+      <div class="section">
+        <div class="gallery-side">
+          <ul class="image-gallery">
+            <li>
+              <img class="img1" alt="" src="./public/metahuman/mh1.png" />
+            </li>
+            <li>
+              <img class="img1" alt="" src="./public/metahuman/mh2.png" />
+            </li>
+            <li>
+              <img class="img1" alt="" src="./public/metahuman/mh3.png" />
+            </li>
+            <li>
+              <img class="img1" alt="" src="./public/metahuman/mh4.png" />
+            </li>
+            <div class="caption">
+              <p>Built MetaHuman using MetaHuman Creator & 3D Mesh-to-MetaHuman</p>
+            </div>
+          </ul>
+        </div>
+
+        <div class="description-side">
+          <header> Process: MetaHuman Creation</header>
+          <p>
+            We wanted to recreate the characters and the actors/actresses as MetaHumans. At the time of the project and program updates, 
+            I used MetaHuman Creator, working on preset MetaHuman to customize the characters and used the Unreal Engine MetaHuman Plug-in of conververting 3D mesh to MetaHuman.
+          </p>
+          <p>
+            For the 3D scan, I used the Polycam, brought that mesh into Blender to clean the mesh before importing it into Unreal to create the MetaHuman. 
+
+          </p>
+        </div>
+      </div>
+
+      <div class="description2">
+        <header>Process: MOCAP</header>
+        <p>
+          In collaboration with Sawmill Studio, we used Optitrack Flex 13 system integrated with PeelCapture and Motive to capture motion. 
+          Post-Production
+          With the collected data, I further cleaned raw motion captured data: removing jitters, correcting swapped markers, and filling in missing data.
+          With the clean data, I solved/attached onto MetaHuman. 
+          The tool that was used was PeelSolve Autodesk Maya plugin. 
+        </p>
+        <header>Challenge: </header>
+        <p>
+          I wanted to transfer the motion directly onto the MetaHuman using the PeelSolve tool. While the existing sources utilized live-streaming or retargeting, 
+          I wanted to utilize the advantage of post-production tool with cleaning the data using a proper MOCAP tool and maintaining as much the quality and data of the motion. 
+        </p>
+      </div>
+        <div class="gallery">
+          <ul class="image-gallery">
+            <li>
+              <img class="img" alt="" src="./public/metahuman/process.png" />
+            </li>
+            <li>
+              <img class="img" alt="" src="./public/metahuman/result.png" />
+            </li>
+            <!-- <li>
+              <img class="img" alt="" src="./public/metahuman/rsult2.png" />
+            </li> -->
+          </ul>
+        </div>
+      <div class="description2">
+        <p>
+          In doing so, I created custom mapping for solving. This is because the normal pipeline of solving is based on the default skeleton used for 3D models which have 4 spine joints, and 2 bones for arms, legs. 
+          However, the metahuman skeleton comes as two sets of skeleton with Body and face. With the body skeleton being more complex with 5 spine joints, extra corrective joints along the entire body.           
+        </p>
+      </div>
+      <div class="gallery">
+        <ul class="image-gallery">
+          <li>
+            <img class="img" alt="" src="./public/metahuman/mapping.png" />
+          </li>
+          <li>
+            <img class="img" alt="" src="./public/metahuman/mapping2.png" />
+          </li>
+          <li>
+            <img class="img" alt="" src="./public/metahuman/mapping3.png" />
+          </li>
+        </ul>
+      </div>
+      <div class="caption">
+        <p>Custom Solving Mapping</p>
+      </div>
+
+      <div class="description2">
+        <header> Process: AR development </header>
+        <p>
+          Challenge: We wanted to make the MetaHuman integrated through web-AR. I went through different attempts of bringing MetaHuman outside of Unreal Engine.
+          Though, in doing this, I also explored the HandHeld AR application.
+        </p>
+      </div>
+      <div class="section">
+        <div class="gallery-side">
+          <ul class="image-gallery-caption">
+            <li>
+              <img class="img1" alt="" src="./public/metahuman/web-ar.png" />
+              <div class="caption">
+                <p>Failed Builds for Web-AR (BlippAR & Aero)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="description-side">
+          <p>
+            For the Web-AR, I extracted the parts of MetaHuman are recompliled in Blender. The other method involved using the provided Maya file of MetaHuman.
+            Though both mehthod resulted in loss of data, manual work in recreating or re-attaching each asset, not the same render quality as seen in Unreal Engine, and cases of loss of rigging or animation feature.           
+          </p>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          While the Handheld AR provided better resutls. I used the Unreal Engine 5.1 Handheld AR template.
+          While it was possible to create MetaHuman in AR, there were some limitations. 
+        </p>
+        <p>
+          In the initial builds, even with data compression of MetaHuman, there was too much data for mobile to render MetaHuman in AR resulting in:
+        </p>
+        <li>
+          Lag in the animation render
+        </li>
+        <li>
+          Failed to render complex shader maps
+        </li>
+        <li>
+          Had to recreate shaders (face, eyes, clothing) to render in textures
+        </li>
+        <li>
+          Couldn’t render high quality that helps with its realistic feature
+        </li>
+      </div>
+
+      <div class="gallery">
+        <ul class="image-gallery">
+          <li>
+            <img class="img1" alt="" src="./public/metahuman/failed1.png" />
+          </li>
+          <li>
+            <img class="img1" alt="" src="./public/metahuman/failed2.png" />
+          </li>
+          <li>
+            <img class="img1" alt="" src="./public/metahuman/failed4.png" />
+          </li>
+        </ul>
+      </div>
+      <div class="caption">
+        <p>Intital Builds through HandHeld AR</p>
+      </div>
+      <div class="description2">
+        <p>
+          Through the project, this supported the MetaHuman's high-fidelity, quality and potential capabilities. 
+          With current capabilities of MetaHuman and it's development are well-supported for animation, rigging, MOCAP, and true-to-life motion emulation. 
+          Especially in it's pre-rigged feature with plenty new tools and programs that are released to support real-motion capture for MetaHuman.
+          While my attempt focused on applying post-motion data onto the MetaHuman, this could be accelerated with the retargeting or live-streaming. 
+        </p>
+        <p>
+          Though, for this projects objective, it did lack in it's rendering capacity through mobile due to its high quality and data. 
+          While it was too much to utilize MetaHuman in mobile AR, this could be further tested in developing a way to decrease data and increasing rendering capacity to bring digital avatars through handheld AR. 
+        </p>
+      </div>
+      <div class="gallery">
+        <ul class="image-gallery-large">
+          <li>
+            <img class="img1" alt="" src="./public/metahuman/metahuman_ar.gif" />
+          </li>
+          <li>
+            <img class="img1" alt="" src="./public/metahuman/metahuman_gif.gif" />
+          </li>
+        </ul>
+      </div>
+      <div class="caption">
+        <p>AR rendering VS PC rendering through UE</p>
+      </div>
+      <div class="extra">
+        <div class="header">
+          <p>Watch Final Build Demo</p>
+        </div >
+        <div class="center">
+          <a href='https://drive.google.com/drive/folders/1f2EnqpXec6T5JvcqKiHUibNjhhQQXsSS?usp=drive_link'> View the Final build demo↗</a>
+      </div>
+
+
+
+    </div>
+    <footer>
+      <div class="contacts">        
+        <p>jiho.5640@gmail.com</p>
+        <a href="https://linkedin.com/in/jiho-kim-595521282">linkedin.com/in/jiho-kim-595521282↗</a>
+      </div>
+    </footer>
+  </body>
+
+
+
+</html>

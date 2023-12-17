@@ -1,0 +1,355 @@
+
+  
+  .landingpage {
+    position: fixed;
+    width: 23%; /* Set to one-third of the screen width */
+    left: 0%;
+    top: 0;
+    height: 100vh;
+    /* background-color: #ebe3df; */
+  }
+
+  .box-container {
+    position: absolute;
+    width: 100%; /* Set to one-third of the screen width */
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    top: 50%;
+    height: 40%;
+    /* z-index: 2; */
+  }
+
+
+  .mainpage {
+    position: relative;
+    width: 77%;
+    left: 18%;
+    top: 0;
+    height: auto;
+    display: inline-block;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left; 
+    font-family: var(--font-sora);
+    z-index: 1;
+    /* background-color: #ebe3df; */
+
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+  }
+
+
+  header {
+    font-size: 22px; 
+    margin-bottom: 15px;
+    pointer-events: none;
+
+  }
+
+  .projectpage {
+    scroll-snap-align: center;
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    font-family: var(--font-sora);
+        /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(1, 1, 1, 1)); */
+
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,227,223, 1)); */
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,0,223, 1)); */
+    z-index: 1;
+  }
+
+  .about
+  {
+    scroll-snap-align: center;
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    font-family: var(--font-sora);
+        /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(1, 1, 1, 1)); */
+
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,227,223, 1)); */
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,0,223, 1)); */
+    z-index: 1;
+  }
+
+
+
+  .projectimage {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color:black;
+    background-repeat: no-repeat;
+
+    /* background-image: 100px; */
+  }
+
+  .vectorlineside {
+    position:absolute;
+    height: 35%;
+  }
+
+  .greeter {
+    scroll-snap-align: center;
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    z-index: 3;
+    /* background-color: #ebe3df; */
+    margin-left:2%;
+  }
+
+  .greeter p{
+    margin-bottom:0%;
+    margin-top:1%;
+    pointer-events: none;
+  }
+
+
+  .intro-text {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 25px;
+    pointer-events: none;
+    /* margin-left: 25%; */
+  }
+
+  /* .scroll {
+      position: relative;
+      display: block;
+      top: 5%;
+      font-weight: bold;      
+  } */
+
+  .project-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .project {
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+  
+  }
+
+  .head {
+    position:absolute;
+    top: 25%;
+    left: 2%
+  }
+
+  .head p{
+    font-size: 20px;
+    pointer-events: none;
+
+  }
+  
+  .project-titles{
+    position: relative;
+  }
+  
+  
+  .project-titles a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    margin:0.7%;
+    margin-left: 7.5px;
+    padding-left: 1%;
+    position: relative;
+    z-index: 2;
+   }
+  
+  .project-titles a:hover {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    color: white;
+  }
+
+  .introduction {
+    position: absolute;
+    width: 35%;
+    /* left: 22.5%; */
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    font-family: var(--font-sora);
+    z-index: 1;
+    margin-left: 2%;
+    
+  }
+  
+  .introduction p{
+    margin-top: 0%;
+    margin-bottom: 10px;
+    line-height: 23px;
+    display:inline-block;
+    pointer-events: none;
+
+  }
+  
+  .vectorlineside {
+    /* top: 50%;  */
+    position: absolute;
+    left: 107%; 
+    /* transform: translate(-50%, -50%);  */
+    z-index: 5;
+  }
+  /* .vectorlineside2 {
+    position: absolute;
+    left: 80%; 
+    z-index: 5;
+  } */
+  
+  .experience{
+    position: absolute;
+    width: 27%;
+    left: 43%;
+    transform: translate(0%, -1%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    font-family: var(--font-sora);
+    z-index: 1;
+  }
+  .experience li {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    pointer-events: none;
+
+  }
+  .experience p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 30px;
+    pointer-events: none;
+
+  }
+
+  .cv {
+    position: absolute;
+    width: 15%;
+    left: 75%;
+    top: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    font-family: var(--font-sora);
+    z-index: 1;
+    transform: translate(0%, -13%);
+
+  }
+
+  .cv p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 30px;
+    pointer-events: none;
+
+  }
+
+  .scrollnav {
+    position: fixed;
+    font-family: var(--font-sora);
+    width: 15%;
+    right: 1%;
+    z-index: 20;
+    top: 2%;
+  }
+  
+  .scrollnav-content {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    text-align: right;
+  }
+
+  .scrollnav-content a{
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  .up {
+    position: absolute;
+    top: 0%;
+    /* left:70%; */
+    text-align: right; 
+  }
+
+
+
+  .down {
+    position: absolute;
+    text-align: right; 
+    /* left:70%; */
+    top: 90%;
+
+  }
+  
+  .scroll {
+    position: absolute;
+    top: 50%;
+    /* left:15%; */
+    text-align: right; 
+    pointer-events: none;
+
+
+  }
+
+  #scrollIndicator {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add a smooth transition effect */
+  }
+
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* opacity: 0;
+    transition: opacity 1s; */
+  }
+
+  .catbox {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }

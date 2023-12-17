@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-sora: 'Koulen', sans-serif;
+  --font-saira: 'Oswald', sans-serif;
+
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --color-black: #000;
+}
+
+
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  width: 20%;
+  padding: 5px 0 2px 0;
+  z-index: 12;
+  /* background-color: #ebe3df; */
+  /* left:0.5%; */
+}
+  
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0.1px;
+}
+  
+.menu ul li {
+  display: flex; /* Use flexbox to align items vertically */
+  align-items: center; /* Vertically center items within each list item */
+}
+  
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-sora);
+  margin: 3px 5px;
+
+  padding: 5px 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+  
+.menu ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.menu ul li img.vectorlines {
+  top: 50%;
+  /* transform: translateY(-50%); */
+}
+  
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 0.4%;
+  z-index: 12;
+  left:0%;
+}
+  
+
+.contacts {
+  position: relative;
+  padding-left: 0.5%;
+  font-size: var(--font-size-10xl);
+  font-family: var(--font-sora);
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+.contacts p{
+  padding-left: 0.5%;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+.contacts a {
+  padding: 0.5%;
+
+  text-decoration: none;
+  color: black;
+}
+
+.contacts a:hover {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  font-family: var(--font-sora);
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 30px; 
+  letter-spacing: 2px; 
+  line-height: 60px;
+  text-align: left;
+  width: 100%;
+  height: 57px;
+}
+
+
+.name {
+  left:0.5%;
+  display: block;
+} 
+
+.nextproject {
+  margin-left: auto;
+
+}

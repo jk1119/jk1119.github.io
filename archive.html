@@ -1,0 +1,181 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/archive.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen&display=swap">
+
+    <title>Archive Page</title>
+
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="./index.html#firstpage">JIHO KIM</a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+          <li>
+            <a href="./index.html#about">ABOUT</a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+          <li>
+            <a href="./archive.html">ARCHIVE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <div class="landingpage">
+      <!-- <div class="title">
+        <span class="name">JIHO KIM</span>
+      </div> -->
+      <div class="emptybox">
+        <img class="box" alt="" src="./public/motion.gif" />
+        <img class="box" alt="" src="./public/forestry1.jpg" />
+        <img class="box" alt="" src="./public/vehicle.jpg" />
+        <img class="cubebox" alt="" src="./public/cube_box.jpg" />
+
+      </div>
+
+
+
+    </div>
+
+      
+    <div class="mainpage">
+      <div class="projectimage">
+      </div>
+      <div class ="project-name">
+        <div>
+          <p class="recent">2023</p>
+          <p class="p_name">
+            NAME
+          </p>
+          <p class="p_skill">
+            SKILLS
+          </p>
+          <p class="p_type">
+            TYPE/PLACE
+          </p>
+          <p class="p_more">
+            RELATED LINKS
+          </p>
+          <img class="vectorline" alt="" src="./public/vector-3.svg" />
+          <p class="old">2019</p>
+        <ul>
+          <div class="dropdown">
+            <a  class="Sawmil">
+              <p class="name">
+                Sawmil Motion Library 
+              </p>
+              <p class="skills">
+                MOCAP, 3D Modeling
+              </p>
+              <p class="work">
+                Sawmil Studio
+              </p>
+            </a>
+            <div class="dropdown-content">
+              <p>
+                Participated as a Motion Technician and 3D designer. 
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href='https://drive.google.com/drive/folders/1jDHHQcavsnovct-UwfDMF7d0MjVXIuFF?usp=sharing' class="forestry">
+              <p class="name">
+                Gamifying Forestry↗
+              </p>
+              <p class="skills">
+                3D Modeling
+              </p>
+              <p class="work">
+                EML
+              </p>
+            </a>
+            <div class="dropdown-content">
+              <p>
+                Project with EML. Worked as the 3D artist and designed mutliple UBC elements for the project. Many of these elements were resused for the VR Paintball Experience project.
+              </p>
+            </div>
+          </div>
+
+          <div  class="more">
+            <a href='https://eml.ubc.ca/projects/gamifying-forestry/'> LINK</a>
+          </div>
+
+          
+          <div class="dropdown">
+            <a href='https://drive.google.com/drive/folders/1-lIvvBlOpL9-n83EKDJV8GnHs7Ru5gpU?usp=sharing' class="Vehicles">
+              <p class="name">
+                3D Vehicles Models↗
+              </p>
+              <p class="skills">
+                3D Modeling
+              </p>
+              <p class="work">
+                Personal
+              </p>
+            </a>
+            <div class="dropdown-content">
+              <p>
+                Personal 3D models. Made different vehicles from car, bike, crane, hydro-engine
+              </p>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <a href='https://drive.google.com/drive/folders/1t1FDWEkTx1EAIqi4ilGGvH-RjUm2GPDR?usp=sharing' class="motiongraphic">
+              <p class="name">
+                Motion Graphics↗
+              </p>
+              <p class="skills">
+                Motion Graphics
+              </p>
+              <p class="work">
+                Personal  
+              </p>
+            </a>
+            <div class="dropdown-content">
+              <p>
+                Personal project using AfterEffect to create different motion graphics effects.
+              </p>
+            </div>
+          </div>
+          
+        </ul>
+      </div>
+
+    </div>
+    <footer>
+      <div class="contacts">        
+        <p>jiho.5640@gmail.com</p>
+        <a href="https://linkedin.com/in/jiho-kim-595521282">linkedin.com/in/jiho-kim-595521282↗</a>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var boxshow = document.querySelector(".box");
+
+        document.querySelector(".box").addEventListener("mouseover", function () {
+          boxshow.style.opacity = 1;
+        });
+
+        document.querySelector(".box").addEventListener("mouseout", function () {
+          boxshow.style.opacity = 0;
+        });
+      });
+  </script>
+
+</html>

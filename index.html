@@ -1,1 +1,256 @@
-hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400&display=swap"> -->
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"> -->
+
+  
+
+    <title>jihokimportfolio</title>
+
+  </head>
+  <body>
+    
+    <nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="./index.html#firstpage">JIHO KIM</a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+ <!--       <li>
+            <a href="./index.html#aboutpage">ABOUT</a> 
+            <a href="./index.html#about">ABOUT</a>
+
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>-->
+          <li>
+            <a href="./archive.html">ARCHIVE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="landingpage">
+      <!-- <div class="title">
+        <span class="name">JIHO KIM</span>
+      </div> -->
+      <div class="box-container">
+        <img class="box" alt="" src="./public/cube.jpg" />
+        <img class="catbox" alt="" src="./public/cat.jpg" id="catImage"/>
+
+      </div>
+      
+    </div>
+
+    
+
+    <div class="mainpage">
+
+      <div class="about" id="about">
+        <div class="introduction">
+          <header>
+            More About Me
+          </header>
+          <div>
+            <p>
+              I'm most passionate on the fulfilling process of creating and developing. I don't limit myself to a particular media. 
+            </p>
+          </div>
+          <div>
+            <p>
+              I like to work within diverse fields of digital design and emerging technology to pursue and to try out new kinds of design. 
+            </p>
+            <p>
+              I'm more developed as a 3D designer, but also learned skills as a developer and technician. 
+              Coming from a Cognitive System background,
+              I try to explore and integrate my knowledge and experience towards my design. 
+            </p>
+          </div>
+          <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
+        </div>
+        <div class="experience">
+            <header>
+              EXPERIENCE:
+            </header>
+            <p>
+            Sawmill Studio: 2023 - present
+            </p>
+            <li> Motion Technician, 3D designer</li>
+            <p>
+              Emerging Media Lab: May 2022- Aug 2023
+            </p>
+            <li> Team Leader, UI/UX Designer, Developer</li>
+            <p>
+              UBC Faculty of Forestry: May 2022-Aug 2022
+            </p>
+            <li> 3D Game Artist</li>
+            <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
+        </div> 
+        <div class="cv">
+          <header> CV:</header>
+          <p>
+            Check out my Linkedin!
+          </p>
+          <p>
+            (On the left corner)
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="greeter" id="firstpage">
+        <header class="intro-text">
+          Hello!
+        </header>
+        <p> 
+          I’m a striving interactive designer with diverse skillsset in various fields from 3D modeling, development and motion.
+        </p>
+        <p> 
+          Expanding from VR, AR, AI, motion technolgy, to designing, developing and researching, I'm most passionate delving into and trying out new forms of designing and developing.
+        </p>
+      </div>
+
+      <div class="projectpage" id="projects">
+
+        <div class="head">
+          <p> Selected Works:</p>
+        </div>
+        <div class="project-titles">
+          <a href="vr.html" class="vr_paintball">VR Paintball Experience↗
+            <div class="info">
+            </div>
+          </a>
+          <a href="metahuman.html" class="shakespeare_ar">Shakespeare MetaHuman AR Edition↗</a>
+          <a href="jis.html" class="jis">Judicial Interrogatory Simulator↗</a>
+        </div>
+        <div class="projectimage"> 
+        </div>
+      </div>
+    </div>
+
+
+    <div class="scrollnav">
+      <div class="scrollnav-content">
+        <div class="up" id="scrollIndicator">
+          <a href="index.html#about">about↑</a>
+        </div>
+        <div class="scroll" id="scrollIndicator" >
+          SCROLL TO SEE MORE
+        </div>
+        <div class="down" id="scrollIndicator">
+          <a href="index.html#projects">
+            SELECTED WORKS↓
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  <footer>
+    <div class="contacts">        
+      <p>jiho.5640@gmail.com</p>
+      <a href="https://linkedin.com/in/jiho-kim-595521282">linkedin.com/in/jiho-kim-595521282↗</a>
+      </div>
+  </footer>
+  </body>
+
+  
+  <script>
+    const projectPage = document.querySelector('.projectimage');
+    const projectLinks = document.querySelectorAll('.project-titles a');
+
+    // Set the initial background color of the project page
+    projectPage.style.backgroundColor = 'white';
+
+    projectLinks.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        // Change the background color of the project page
+        projectPage.style.backgroundImage = `url('public/${link.classList[0]}.png')`;
+        projectPage.style.backgroundSize = 'contain'; // or 'contain' or a specific size value
+
+      });
+
+      link.addEventListener('mouseout', () => {
+        // Reset the background color of the project page
+        projectPage.style.backgroundImage = '';
+        projectPage.style.backgroundColor = 'white';
+      });
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+    var scrollIndicatorUp = document.querySelector(".up");
+    var scrollIndicatorDown = document.querySelector(".down");
+
+
+    window.addEventListener("scroll", function () {
+      // Check if the user has scrolled past the top of the page
+      if (window.scrollY > 0) {
+        scrollIndicatorUp.style.opacity = 1; // Show the "up" button
+      } else {
+        scrollIndicatorUp.style.opacity = 0; // Hide the "up" button
+      }
+
+      // Check if the user has scrolled past the "about" section
+      var aboutSection = document.getElementById("projects");
+      if (aboutSection && window.scrollY < aboutSection.offsetTop + aboutSection.offsetHeight - window.innerHeight) {
+        scrollIndicatorDown.style.opacity = 1; // Show the "down" button
+      } else {
+        scrollIndicatorDown.style.opacity = 0; // Hide the "down" button
+      }
+    });
+  });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var catshow = document.querySelector(".catbox");
+
+        document.querySelector(".catbox").addEventListener("mouseover", function () {
+          catshow.style.opacity = 1;
+        });
+
+        document.querySelector(".catbox").addEventListener("mouseout", function () {
+          catshow.style.opacity = 0;
+        });
+      });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var projectTitles = document.querySelectorAll('.project-titles a');
+      var scrollDiv = document.querySelector('.scroll');
+
+      projectTitles.forEach(function (title) {
+        title.addEventListener('mouseover', function () {
+          scrollDiv.style.opacity = 0;
+        });
+
+        title.addEventListener('mouseout', function () {
+          scrollDiv.style.opacity = 1;
+        });
+      });
+    });
+
+
+  </script>
+
+</html>
