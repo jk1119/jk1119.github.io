@@ -250,6 +250,23 @@
       });
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+    // Get the element with the "firstpage" ID (the greet div)
+    var greetSection = document.getElementById("firstpage");
+
+    // Check if the element is found
+    if (greetSection) {
+      // Calculate the offset of the element from the top of the page
+      var offsetTop = greetSection.offsetTop;
+
+      // Scroll to the element on page load
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth", // You can change this to "auto" for instant scrolling
+      });
+    }
+  });
+
 
   </script>
 
