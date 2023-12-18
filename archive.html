@@ -38,12 +38,11 @@
         <span class="name">JIHO KIM</span>
       </div> -->
       <div class="emptybox">
-        <img class="box" alt="" src="./public/motion.gif" />
-        <img class="box" alt="" src="./public/forestry1.jpg" />
-        <img class="box" alt="" src="./public/vehicle.jpg" />
-        <img class="cubebox" alt="" src="./public/cube_box.jpg" />
-
-      </div>
+        <img class="box motiongraphic" alt="" src="./public/motion.gif">
+        <img class="box forestry" alt="" src="./public/forestry1.jpg">
+        <img class="box Vehicles" alt="" src="./public/vehicle.jpg">
+        <img class="cubebox" alt="" src="./public/cube_box.jpg">
+</div>
 
 
 
@@ -176,6 +175,22 @@
           boxshow.style.opacity = 0;
         });
       });
+
+
+      var boxshow = document.querySelector(".cubebox");
+for (let className of ["motiongraphic", "forestry", "Vehicles"]) {
+    document.querySelector("a."+className).addEventListener("mouseover", function () {
+        boxshow.style.opacity = 0;
+        document.querySelector("img."+className).style.opacity = 1;
+    });
+    
+    document.querySelector("a."+className).addEventListener("mouseout", function () {
+        boxshow.style.opacity = 1;
+        document.querySelector("img."+className).style.opacity = 0;
+    });
+}
   </script>
+
+  
 
 </html>
