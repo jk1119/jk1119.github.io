@@ -65,13 +65,15 @@ body::-webkit-scrollbar {
 
 .project-name ul{
   position: fixed;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+
   flex-direction: column;
   margin:0%;
   line-height: 5vh;
   width: 53%;
   padding:0%;
-  top: 35%;
+  top: 33vh;
   left: 25%;
   /* transform: translate(-50%, -50%); */
 }
@@ -104,17 +106,17 @@ body::-webkit-scrollbar {
 }
 
   
-.Sawmil, .forestry, .Vehicles , .motiongraphic   {
+.Sawmil, .forestry, .Vehicles , .motiongraphic, .poem   {
   display: block;
     
 }
 
-.Sawmil a {
+.Sawmil a, .poem a {
   pointer-events: none;
 
 }
 
-.Sawmil p, .forestry p, .Vehicles p, .motiongraphic p {
+.Sawmil p, .forestry p, .Vehicles p, .motiongraphic p, .poem p {
     display: inline-block;
     margin-right: 10px; /* Adjust the margin as needed */
     margin-top: 1%;
@@ -126,7 +128,7 @@ body::-webkit-scrollbar {
   position: absolute;
   display: block;
   /* top: auto; */
-  left: 34%;
+  left: 28%;
   /* transform: translate(-50%, -50%); */
   margin-left: 20px; /* Adjust the margin as needed */
 
@@ -146,7 +148,20 @@ body::-webkit-scrollbar {
 .more a{
   position: absolute;
   /* display: block; */
-  top: 27%;
+  top: 43%;
+  left: 105%;
+  transform: translate(100%, 0%);
+  /* margin-left: 20px; */
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: underline; /* or any decoration you prefer */
+
+}
+
+.more_2 a{
+  position: absolute;
+  /* display: block; */
+  top: 4%;
   left: 105%;
   transform: translate(100%, 0%);
   /* margin-left: 20px; */
