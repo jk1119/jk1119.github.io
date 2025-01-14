@@ -8,20 +8,7 @@ nav {
     bottom: 100%;
     width: 100%;
     z-index: 12;
-    margin-top: 5%;
 
-  }
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header p {
-    font-size: 24px; /* Adjust the font size as needed */
-    text-align: center; /* Center the text horizontally */
-    margin: 0; /* Remove default margin for the paragraph */
   }
   
   .mainpage {
@@ -29,7 +16,8 @@ nav {
     width: 100%;
     height: 100%;
     padding-top: 10px;
-    font-family: var(--font-sora);
+    line-height: 1.6;
+
 
   }
 
@@ -41,7 +29,7 @@ nav {
   }
 
   .name {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .type {
@@ -54,20 +42,21 @@ nav {
   }
 
   .mainimg {
-    width:100%;
+    width:80%;
   }
 
   .description, .links {
     margin: 1.5% 10% 4% 10%;  
-    font-size: 19px;
-    font-family: var(--font-saira);
+    font-size: 16px;
+  }
+  .description a {
+    text-decoration: none;
+    color: black;
   }
 
 
   .links {
     margin: 0% 10% 4% 10%;  
-    font-size: 19px;
-    font-family: var(--font-saira);
   }
   .links p{
     margin-top: 0%;
@@ -93,8 +82,6 @@ nav {
     /* margin: 1.5% 10% 4% 10%;   */
     width: 40%;
     /* margin-left: auto; */
-    font-size: 19px;
-    font-family: var(--font-saira);
 
   }
 
@@ -136,8 +123,6 @@ nav {
 
   .description2 {
     margin: 1.5% 10% 0% 10%;  
-    font-size: 19px;
-    font-family: var(--font-saira);
   }
 
   .gallery-side {
@@ -297,6 +282,9 @@ nav {
 
 .extra {
   margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 .center {
   text-align: center;
@@ -315,3 +303,59 @@ nav {
 
 
 
+
+.contacts-more {
+  position: relative;
+  display: flex;               /* Enable Flexbox */
+  justify-content: center;     /* Center content horizontally */
+  align-items: center;         /* Center content vertically */
+  margin-top: 0px;
+  width: 100%;                 /* Ensure it spans the full width */
+  height: auto;                /* Let it grow with content */
+}
+  
+.contacts-more ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0.1px;
+
+}
+  
+.contacts-more ul li {
+  display: flex; /* Use flexbox to align items vertically */
+  align-items: center; /* Vertically center items within each list item */
+  margin-left: 5%;
+  
+}
+.contacts-more ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 2px 8px 2px 8px;
+
+}
+
+
+.contact-icon {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: 1px 1px ;
+
+  padding: 2px 8px 2px 0px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+
+.contacts-more ul li:hover .icon{
+  filter: invert(1); /* Invert icon color for contrast */
+}
+.contacts-more ul li:hover{
+  background-color: black;
+}
+  
+.contacts-more ul li:hover a{
+  color: white;
+}
