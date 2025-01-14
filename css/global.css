@@ -1,13 +1,13 @@
 body {
   margin: 0;
   line-height: normal;
+  font-size: 15px;
 }
 
 :root {
   /* fonts */
-  --font-sora: 'Koulen', sans-serif;
-  --font-saira: 'Oswald', sans-serif;
-
+ --font-primary: 'Montserrat', sans-serif; 
+  --font-secondary: 'Barlow Semi Condensed', sans-serif;
 
   /* font sizes */
   --font-size-11xl: 30px;
@@ -18,6 +18,28 @@ body {
   --color-black: #000;
 }
 
+body {
+  font-family: var(--font-primary); /* Default: Barlow Semi Condensed */
+}
+
+h1, h2, h3, header {
+  font-family: var(--font-secondary); /* Headings: Montserrat */
+  font-size: 20px;
+  font-weight: 600;
+  pointer-events: none;
+  margin-bottom: 10px;
+}
+
+header2 {
+  font-family: var(--font-secondary); /* Headings: Montserrat */
+  font-size: 18px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+strong {
+  font-weight: 600;
+}
 
 
 html {
@@ -54,8 +76,7 @@ nav {
   color: black;
   font-size: 16px;
   font-weight: 500;
-  font-family: var(--font-sora);
-  margin: 3px 5px;
+  /* margin: 3px 5px; */
 
   padding: 5px 10px;
   position: relative;
@@ -82,33 +103,54 @@ footer {
   left:0%;
 }
   
-
 .contacts {
   position: relative;
   padding-left: 0.5%;
-  font-size: var(--font-size-10xl);
-  font-family: var(--font-sora);
   text-align: left;
   text-decoration: none;
   color: black;
 }
 
-.contacts p{
-  padding-left: 0.5%;
-  margin-top: 0;
-  margin-bottom: 1px;
+.contacts ul {
+  display: inline-flex; /* Wrap content only */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.contacts a {
-  padding: 0.5%;
+.contacts ul li {
+  display: inline-flex; /* Wrap content only */
+  align-items: center; /* Vertically center items */
+  margin-bottom: 10px; /* Add spacing between email and LinkedIn items */
+}
 
+.contacts ul li a {
   text-decoration: none;
   color: black;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 2px 8px 2px 2px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.contacts a:hover {
+.contacts ul li:hover .icon {
+  filter: invert(1); /* Invert icon color for contrast */
+}
+
+.contacts ul li:hover {
   background-color: black;
+}
+
+.contacts ul li:hover a {
   color: white;
+}
+
+.icon {
+  /* top: 50%;  */
+  margin-left: 0.1px;
+  padding: 2px 5px 2px 8px;
+  /* transform: translate(-50%, -50%);  */
 }
 
 .title {
@@ -134,4 +176,24 @@ footer {
 .nextproject {
   margin-left: auto;
 
+}
+
+.intro-main p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.logo {
+  left: 50%; /* Move the menu's left edge to the center */
+  transform: translateX(-50%); /* Adjust by 50% of the menu's width */
+
+  display: flex; /* Align menu items horizontally */
+  position: relative;
+  justify-content: center;
+  height: 120px; /* Adjust height if needed */
+}
+
+.logo img {
+  max-width: 125px; /* Limit the size of the logo */
 }

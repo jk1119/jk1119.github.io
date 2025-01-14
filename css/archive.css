@@ -128,7 +128,7 @@ body::-webkit-scrollbar {
   position: absolute;
   display: block;
   /* top: auto; */
-  left: 28%;
+  left: 32%;
   /* transform: translate(-50%, -50%); */
   margin-left: 20px; /* Adjust the margin as needed */
 
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
   position: absolute;
   display: block;
   /* top: auto; */
-  left: 7%;
+  left: 9%;
   top:19.5%;
   /* transform: translate(-50%, -50%); */
   margin-left: 20px; /* Adjust the margin as needed */
@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
   position: absolute;
   display: block;
   /* top: auto; */
-  left: 31%;
+  left: 32%;
   top:19.5%;
   /* transform: translate(-50%, -50%); */
   margin-left: 20px; /* Adjust the margin as needed */

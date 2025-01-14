@@ -6,19 +6,8 @@
 
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/index.css" />
-
-    
-
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap">
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400&display=swap"> -->
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap"> -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"> -->
-
   
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>jihokimportfolio</title>
 
@@ -28,27 +17,22 @@
     <nav>
       <div class="menu">
         <ul>
-          <li>
-            <a href="./index.html#firstpage">JIHO KIM</a>
+          <li> 
+            <a href="javascript:void(0);" onclick="scrollToSection('introduction')"><header2>JIHO KIM</header2></a>
             <img class="vectorlines" alt="" src="./public/vector-2.svg" />
           </li>
- <!--       <li>
-            <a href="./index.html#aboutpage">ABOUT</a> 
-            <a href="./index.html#about">ABOUT</a>
-
-            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
-          </li>-->
           <li>
-            <a href="./archive.html">ARCHIVE</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('about')"><header2>ABOUT</header2></a>
+            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
+          </li>
+          <li>
+            <a href="./archive.html"><header2>ARCHIVE</header2></a>
           </li>
         </ul>
       </div>
     </nav>
     
     <div class="landingpage">
-      <!-- <div class="title">
-        <span class="name">JIHO KIM</span>
-      </div> -->
       <div class="box-container">
         <img class="box" alt="" src="./public/cube.jpg" />
         <img class="catbox" alt="" src="./public/cat.jpg" id="catImage"/>
@@ -64,80 +48,103 @@
       <div class="about" id="about">
         <div class="introduction">
           <header>
-            More About Me
+            ABOUT 
           </header>
           <div>
             <p>
-              I'm most passionate on the fulfilling process of creating and developing. I don't limit myself to a particular media. 
-            </p>
-          </div>
-          <div>
-            <p>
-              I like to work within diverse fields of digital design and emerging technology to pursue and to try out new kinds of design. 
+              I'm passionate about the creative process and thrive on exploring diverse digital media, including VR, AR, and emerging technologies.
             </p>
             <p>
-              I'm more developed as a 3D designer, but also learned skills as a developer and technician. 
-              Coming from a Cognitive System background,
-              I try to explore and integrate my knowledge and experience towards my design. 
+              With a background in Cognitive Systems, I bring a curious, research-driven mindset to my work as a 3D designer and developer, constantly experimenting and crafting impactful experiences.
             </p>
           </div>
           <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
         </div>
         <div class="experience">
-            <header>
-              EXPERIENCE:
-            </header>
+          <header>
+            EXPERIENCE
+          </header>
+          <div class="exp-list">
             <p>
-            Sawmill Studio: May 2023 - Aug 2024
+              <strong>Motion Technician, 3D designer</strong><br>
+              Sawmill Studio<br>May 2023 - Aug 2024<br>
             </p>
-            <li> Motion Technician, 3D designer</li>
             <p>
-              Emerging Media Lab: May 2022 - Aug 2024
+              <strong>Team Leader, UI/UX Designer, Developer</strong><br>
+              Emerging Media Lab
+              <br>May 2022 - Aug 2024<br>
             </p>
-            <li> Team Leader, UI/UX Designer, Developer</li>
             <p>
-              UBC Faculty of Forestry: May 2022 - Aug 2022
+              <strong>3D Game Artist</strong><br>
+              UBC Faculty of Forestry 
+              <br>May 2022 - Aug 2022<br>
             </p>
-            <li> 3D Game Artist</li>
-            <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
+          </div>
+          <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
+
+        </div>
+        <div class="award">
+          <header>
+            AWARDS
+          </header>
+          <div class="awd-list"> 
+            <p>
+              <strong>Kirk Karasin Memorial Award in Computer Science</strong>
+              <br>UBC Emerging Media Lab
+              <br> August 2024
+            </p>
+          </div>
+      
         </div> 
-        <div class="cv">
-          <header> CV:</header>
-          <p>
-            Check out my Linkedin!
-          </p>
-          <p>
-            (On the left corner)
+
+      </div>
+
+
+      <div class="greeter" id="introduction">
+        <header>Designer</header>
+        <header class="intro-text">
+          UX/UI  |  XR (AR, VR)  |  3D WORK
+        </header>
+        <div class="intro-main">
+          <p> 
+            I’m an <strong>multidiscplinary designer</strong> with diverse skill sets from <strong>2D/3D, research and development</strong>.
           </p>
         </div>
-
+        <div class="scroll-info">
+          <p>WANT TO SEE MORE?</p>
+          <a class="scroll-hover-about" href="javascript:void(0);" onclick="scrollToSection('about')"> <strong>LEARN MORE↑</strong></a>
+          <a class="scroll-hover-project" href="javascript:void(0);" onclick="scrollToSection('projects')"> <strong>SELECTED WORKS↓</strong></a>
+        </div>
       </div>
-
-
-      <div class="greeter" id="firstpage">
-        <header class="intro-text">
-          Hello!
-        </header>
-        <p> 
-          I’m a striving interactive designer with diverse skillsset in various fields from 3D modeling, development and motion.
-        </p>
-        <p> 
-          Expanding from VR, AR, AI, motion technolgy, to designing, developing and researching, I'm most passionate delving into and trying out new forms of designing and developing.
-        </p>
-      </div>
+      
 
       <div class="projectpage" id="projects">
 
         <div class="head">
-          <p> Selected Works:</p>
+          <header> Selected Works:</header>
         </div>
         <div class="project-titles">
-          <a href="vr.html" class="vr_paintball">VR Paintball Experience↗
-            <div class="info">
+          <div class="project">
+            <a href="vr.html" class="vr_paintball">VR Paintball Experience↗
+            <div class="description">
+              <p>VR | UX/UI | 3D</p>
             </div>
           </a>
-          <a href="metahuman.html" class="shakespeare_ar">Shakespeare MetaHuman AR Edition↗</a>
-          <a href="jis.html" class="jis">Judicial Interrogatory Simulator↗</a>
+          </div>
+          <div class="project">
+          <a href="metahuman.html" class="shakespeare_ar">Shakespeare MetaHuman AR Edition↗
+          <div class="description">
+            <p>AR | AI | UX/UI | 3D</p>
+          </div>
+          </a>
+        </div>
+          <div class="project">
+          <a href="jis.html" class="jis">Judicial Interrogatory Simulator↗
+          <div class="description">
+            <p>Web & VR | AI | UX/UI | 3D</p>
+          </div>
+        </a>
+        </div>
         </div>
         <div class="projectimage"> 
         </div>
@@ -148,15 +155,14 @@
     <div class="scrollnav">
       <div class="scrollnav-content">
         <div class="up" id="scrollIndicator">
-          <a href="index.html#about">about↑</a>
+          <a class="scroll-hover-about" href="javascript:void(0);" onclick="scrollToSection('about')"> ABOUT↑</a>
         </div>
         <div class="scroll" id="scrollIndicator" >
-          SCROLL TO SEE MORE
+          <strong>SCROLL</strong>
         </div>
         <div class="down" id="scrollIndicator">
-          <a href="index.html#projects">
-            SELECTED WORKS↓
-          </a>
+          <a class="scroll-hover-project" href="javascript:void(0);" onclick="scrollToSection('projects')">SELECTED WORKS↓</a>
+
         </div>
 
       </div>
@@ -164,11 +170,20 @@
 
     </div>
 
+
   <footer>
-    <div class="contacts">        
-      <p>jiho.5640@gmail.com</p>
-      <a href="https://linkedin.com/in/jiho-kim-595521282">linkedin.com/in/jiho-kim-595521282↗</a>
-      </div>
+    <div class="contacts">
+      <ul>
+        <li>
+          <img class="icon" alt="" src="./public/email_icon.svg" />
+          <a href="mailto:jiho.5640@gmail.com">EMAIL</a>
+        </li>
+        <li>
+          <img class="icon" alt="" src="./public/linkedin_icon.svg" />
+          <a href="https://linkedin.com/in/jiho-kim-595521282">LINKEDIN</a>
+        </li>
+      </ul>
+    <div>
   </footer>
   </body>
 
@@ -267,6 +282,12 @@
     }
   });
 
+  function scrollToSection(id) {
+  const target = document.getElementById(id);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 
   </script>
 
