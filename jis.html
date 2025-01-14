@@ -8,42 +8,42 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/projectinfo.css" /> 
 
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+
+    <link
+      rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen&display=swap">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@350&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap">
     <title>JIS Page</title>
 
   </head>
   <body>
-
     <nav>
       <div class="menu">
         <ul>
           <li>
-            <a href="./index.html#introduction"><header2>JIHO KIM</header2></a>
+            <a href="./index.html#firstpage">JIHO KIM</a>
             <img class="vectorlines" alt="" src="./public/vector-2.svg" />
           </li>
           <li>
-            <a href="./index.html#about"><header2>ABOUT</header2></a>
+            <a href="./index.html#projects">SELECTED WORKS</a>
             <img class="vectorlines" alt="" src="./public/vector-2.svg" />
           </li>
           <li>
-            <a href="./archive.html"><header2>ARCHIVE</header2></a>
+            <a href="./archive.html">ARCHIVE</a>
           </li>
           <li class="nextproject">
-            <a href="./vr.html"><header2>OTHER WORK: VR Paintball Experience→<header2></a>
+            <a href="./vr.html">OTHER WORK: VR PAINTBALL EXPERIENCE→</a>
           </li>
         </ul>
       </div>
     </nav>
-
     
 
       
     <div class="mainpage">
-      
       <div class="project-title">
-        <img class="mainimg" alt="" src="./public/jis.png" />
-
         <header class="name"> Judicial Interrogatory Simulator</header>
         <p class="type">3D (Maya, Blender)</p>
         <p class="type">Motion/Animation</p>
@@ -54,16 +54,23 @@
         
 
       </div>
+      <img class="mainimg" alt="" src="./public/jis.png" />
 
       <div class="description">
         <p>
-          This AI-driven web and VR application simulates moot court sessions with an AI judge for first-year law students.
+          I worked on Judicial Interrogatory Simulator led by Emerging Media Lab. This is a AI web application that simulates
+          a courtroom session with an AI judge for first-year law students to prepare for their Moot Court.
+          I was the team leader and participated as UI/UX designer. I led the team from organizing and following the agile process, and worked on improving the user flow and the UI designs.
         </p>
         <p>
-          Led the web development team to integrate the AI judge with real-time interactivity, enhancing 3D visuals, motions and UI/UX with new AI features.
+          When I was assigned on this project, it was already built in regards of basic functionality and user-interface. 
+          But, our team wanted to improve the project by implementing an AI judge so the students would be able to interact in real-time.
+          With the new implementation of the AI feature, I wanted to maintain the current built function with the overall UI and incorporate our new feauture while improving the UI. 
         </p>
+      </div>
+      <div class="description2">
         <p>
-          Implemented AI functionality in the VR version, fully integrating with Metahuman avatars and optimizing user interaction through game controls and visual improvements.
+          Firstly, I worked on updating the user-flow, with the new integrated feature. And improved on the UI by adding new user-states. 
         </p>
       </div>
       <div class="gallery">
@@ -98,21 +105,20 @@
         </div>
         <div class="description-side">
           <p>
-            Added motions: idle, talking, nodding, disgreement, reading, writing, and drinking. 
-            <br><br>Integerated the judge model to randomly iterates through the active motions switch to talking motion when speaking. 
+            I made additonal improvements to the judge's movement. Before the movements were limited to talking with simple motions and static position.
+            I integrated more motions to idle, talking, nodding, disgreement, reading, writing, and drinking. All these motions were integrated with the judge,
+            so it iterates through the motions while listening and starts talking motion when it is speaking. 
           </p>
-          <p><br>
-            Tools: Rokoko AI Motion Capture, Blender, React, Java
+          <p>
+            I used Rokoko AI Motion Capture and Blender to add the motion and smooth out the animations.
           </p>
         </div>
       </div>
 
       <div class="description2">
         <p>
-          Updated environment background beginning from classroom to proper courtroom. 
-        </p>          
-        <p>
-          Tools: Maya, Blender, React
+          Another improvement, I did were changing the courtroom. The PI's originally wanted keep the room similar to a classroom with elements of a courtroom (podium, flags, Coat of arms) as their mootcourts are held in classes. 
+          Though the room lacked dimensions and lighting that provides the immersion. 
         </p>
       </div>
       <div class="gallery">
@@ -127,6 +133,13 @@
       </div>
       <div class="caption">
         <p>Original Layout</p>
+      </div>
+      <div class="description2">
+        <p>
+          Therefore, I created two environments: Classroom Version and Courtroom version. Both maintaining the elements needed in the moot court, while providing two environments for moot court session. 
+          Both room, involved working on the lightning and texture rendering to provide that realisim but not impededing the user's focus and rendering capacity. 
+        </p>
+
       </div>
       <div class="gallery">
         <ul class="image-gallery">
@@ -156,35 +169,26 @@
       </div>
 
     <div class="extra">
-        <header>More Information</header>
+      <div class="header">
+        <p>More Information</p>
       </div>
       <div class="links">
+        <p>Click on the link below to read more on Judicial Interrogatory Simulator by Emerging Media Lab</p>
+        <li>
+          <a href="https://eml.ubc.ca/projects/jis/">LINK: read more on the development of JIS↗</a>
 
-          <a href="https://eml.ubc.ca/projects/jis/"> <strong>Click here</strong> to read more on Judicial Interrogatory Simulator by Emerging Media Lab </a>
-
+        </li>
 
       </div>
     </div>
-    <section class="logo">
-      <img src="./public/cat.jpg" alt="Project 1 cat">
-  </section>
+
 
     </div>
     <footer>
-      <div class="contacts-more">
-        <header2>CONTACTS:</header2>
-
-        <ul>
-          <li>
-            <img class="icon" alt="" src="./public/email_icon.svg" />
-            <a href="mailto:jiho.5640@gmail.com">EMAIL</a>
-          </li>
-          <li>
-            <img class="icon" alt="" src="./public/linkedin_icon.svg" />
-            <a href="https://linkedin.com/in/jiho-kim-595521282">LINKEDIN</a>
-          </li>
-        </ul>
-      <div>
+      <div class="contacts">        
+        <p>jiho.5640@gmail.com</p>
+        <a href="https://linkedin.com/in/jiho-kim-595521282">linkedin.com/in/jiho-kim-595521282↗</a>
+      </div>
     </footer>
   </body>
 
