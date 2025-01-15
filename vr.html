@@ -38,35 +38,41 @@
       </div>
     </nav>
     
-
-      
     <div class="mainpage">
 
-      <div class="project-title">
+      <!-- Project Title Image Section -->
+      <div class="project-title-image">
         <img class="mainimg" alt="" src="./public/vr_paintball.png" />
-
-        <header class="name"> VR Paintball Experience</header>
-        <p class="type">3D (Maya, Blender)</p>
-        <p class="type">Motion</p>
-        <p class="type">Unity (C#)</p>
-        <p class="type">VR (Oculus Quest)</p>
-        <p class="type">GROUP-WORK</p>
-        <p class="type">Winter, 2022 (3 Months)</p>
-
+      </div>
+    
+      <!-- Project Introduction Section -->
+      <div class="project-intro">
+        <div class="project-title">
+          <header3> VR Paintball Experience</header3>
+          
+          <div class="project-description">
+            <p>
+              Welcomed space of UBC for any visitors! This VR immersive experience introduces a reimagined University of British Columbia (UBC) as an interactive hub space that embodies the spirit of UBC.
+            </p>
+            <p>
+              Created various 3D elements based on historical and iconic landmarks of UBC. Incorporated an interactive paintball feature inspired by UBC's culture.
+            </p>
+          </div>
+        </div>
+    
+        <!-- Project Type & Tools Section -->
+        <div class="project-type">  
+          <p>VR (Unity)
+          <br>Maya, Blender, C#</p>
+          <p>Lead 3D Designer & Game Developer</p>
+          <p>GROUP-WORK
+          <br>Winter, 2022 (3 Months)</p>
+        </div>
 
 
       </div>
-      <div class="description">
-        <p>
-          Welcomed space of UBC for any visiters!<br>
-          This VR immersive experience introduces a reimagined Univerisity of British Columbia (UBC) as an interactive hub space that embodies the spirit of the UBC.
-          <br>
-          Created the various 3D elements from historical and iconic landmarks of UBC. Incorporated interactive paintball feature inspired by UBC's cultures.   
 
-        </p>
-      </div>
-
-    <div class="section">
+    <div class="side-display">
       <div class="gallery-side">
         <ul class="image-gallery">
           <li>
@@ -91,12 +97,25 @@
       </div>
     </div>
 
-
+    <div class="sub-header">
+      <header>3D Assets & Key Elements</header>
+      <div class="description">
+        <p>
+          Created key UBC landmarks and assets for the VR space, including benches, waste bins, light poles, and iconic features like the 
+          Martha Piper Plaza fountain, UBC sign, totem poles, and clock tower. </p>
+          <p>
+            Tools: Maya, Blender
+          </p>
+      </div>
+    </div>
     <div class="sidecaption">
       <strong>Scroll→</strong>
     </div>
       <div class="gallery">
+
         <ul class="image-gallery-2">
+          <button class="prev-button"><</button>
+
           <li>
             <img class="img" alt="" src="./public/vr/assets.png" />
           </li>
@@ -119,18 +138,15 @@
           <li>
             <img class="img" alt="" src="./public/vr/totem2.png" />
           </li>
+          <button class="next-button">></button>
+
+        </ul>
       </div>
 
 
-      <div class="description">
-        <p>
-          Created key UBC landmarks and assets for the VR space, including benches, waste bins, light poles, and iconic features like the 
-          Martha Piper Plaza fountain, UBC sign, totem poles, and clock tower. </p>
-          <p>
-            Tools: Maya, Blender
-          </p>
-      </div>
+
       <div class="gallery">
+
         <ul class="image-gallery-3">
           <li>
             <img class="img1" alt="" src="./public/vr/bird_f.png" />
@@ -146,32 +162,37 @@
          </li>
           <li>
             <img class="sketch" alt="" src="./public/vr/bird_model_sketch.jpg" />
+            
           </li>
-      </div>
-        <div class="caption">
-          <p>Final Design & Character Design Sheet</p>
-        </div>
+        </ul>
 
-      <div class="description">
-        <p>
-          <strong>Character Design: </strong><br>
-          I designed the main player character, also serving as an NPC, to reimagine the UBC mascot, Thunderbird. 
-          <br>The character was created to embody a friendly image while staying true to the mascot’s identity. 
-          I handled the design, rigging, and code implementation for player movement and walking animations.
-        </p>
-        <p>
-          Tools: Maya, Blender, Unity (C#)
-        </p>
-        <div class="sidenote">
+      </div>
+      <div class="caption">
+        <p>Final Design & Character Design Sheet</p>
+      </div>
+      <div class="sub-header">
+        <div class="description">
           <p>
-            The code implementation for player movements were based on Dinesh Punni and Valem Tutorials.
+            <strong>Character Design: </strong><br>
+            I designed the main player character, also serving as an NPC, to reimagine the UBC mascot, Thunderbird. 
+            <br>The character was created to embody a friendly image while staying true to the mascot’s identity. 
+            I handled the design, rigging, and code implementation for player movement and walking animations.
           </p>
+          <p>
+            Tools: Maya, Blender, Unity (C#)
+          </p>
+          <div class="sidenote">
+            <p>
+              The code implementation for player movements were based on Dinesh Punni and Valem Tutorials.
+            </p>
+          </div>
         </div>
       </div>
 
 
 
-    <div class="section">
+
+    <div class="side-display">
       <div class="gallery-side">
         <ul class="image-gallery">
           <li>
@@ -179,16 +200,16 @@
           </li>
           <li>
             <img class="img" alt="" src="./public/vr/vr8.png" />
-
           </li>
         </ul>
       </div>
       <div class="description-side">
         <p>
           <strong>Paintball Effect Development:</strong><br>
-      The paintball feature lets users paint the environment by shooting paintballs, with a scorekeeping system that rewards points for paintballs landing on the UBC sign. 
-      We used paintball colors to represent UBC faculties. 
-      <br>Contributed by implementing paintability for the environment and UBC sign, and coding the functionality for interaction.
+        The paintball feature lets users paint the environment by shooting paintballs, with a scorekeeping system that rewards points for paintballs landing on the UBC sign. 
+        We used paintball colors to represent UBC faculties. 
+      </p>
+      <p>Contributed by implementing paintability for the environment and UBC sign, and coding the functionality for interaction.
         The paintball feature allows the user to grab a paintball and use it to paint the environment.
       </p>
       <p>
@@ -215,9 +236,9 @@
         ></iframe>
     </div>
 
-    <section class="logo">
+    <side-display class="logo">
       <img src="./public/cat.jpg" alt="Project 1 cat">
-  </section>
+  </side-display>
 
     </div>
     <footer>
@@ -237,7 +258,25 @@
       <div>
     </footer>
   </body>
+<script>
+document.querySelector('.next-button').addEventListener('click', function() {
+  const gallery = document.querySelector('.image-gallery-2');
+  const scrollAmount = gallery.clientWidth; // Amount to scroll (one gallery width)
+  gallery.scrollBy({
+    left: scrollAmount, // Scroll horizontally to the right
+    behavior: 'smooth'  // Smooth scroll animation
+  });
+});
 
+document.querySelector('.prev-button').addEventListener('click', function() {
+  const gallery = document.querySelector('.image-gallery-2');
+  const scrollAmount = gallery.clientWidth; // Amount to scroll (one gallery width)
+  gallery.scrollBy({
+    left: -scrollAmount, // Scroll horizontally to the left
+    behavior: 'smooth'   // Smooth scroll animation
+  });
+});
 
+</script>
 
 </html>

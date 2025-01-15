@@ -36,6 +36,29 @@ header2 {
   pointer-events: none;
 }
 
+header3 {
+  font-family: var(--font-secondary); /* Headings: Montserrat */
+  font-size: 32px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+
+/* Media query for screens smaller than 852px */
+@media (min-width: 1600px) {
+  body {
+      font-size: 16px;  /* Font size stays 16px on screens up to 852px */
+  }
+  header {
+    font-size: 24px; 
+    font-weight: 600;
+  }
+  header3 {
+    font-size: 40px;
+  }
+}
+
+
 strong {
   font-weight: 600;
 }
@@ -85,6 +108,8 @@ nav {
 .menu ul li a:hover {
   background-color: black;
   color: white;
+  box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.4);
+
 }
 
 .menu ul li img.vectorlines {
@@ -139,6 +164,8 @@ footer {
 
 .contacts ul li:hover {
   background-color: black;
+  box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.4);
+
 }
 
 .contacts ul li:hover a {
@@ -186,7 +213,7 @@ footer {
 .logo {
   left: 50%; /* Move the menu's left edge to the center */
   transform: translateX(-50%); /* Adjust by 50% of the menu's width */
-
+  margin-top: 10px;
   display: flex; /* Align menu items horizontally */
   position: relative;
   justify-content: center;

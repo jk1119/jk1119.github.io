@@ -37,9 +37,7 @@
       <div class="box-container">
         <img class="box" alt="" src="./public/cube.jpg" />
         <img class="catbox" alt="" src="./public/cat.jpg" id="catImage"/>
-
       </div>
-      
     </div>
 
     
@@ -58,6 +56,9 @@
             <p>
               With a background in Cognitive Systems, I bring a curious, research-driven mindset to my work as a 3D designer and developer, constantly experimenting and crafting impactful experiences.
             </p>
+            <p>
+
+            </p>
           </div>
           <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
         </div>
@@ -68,17 +69,18 @@
           <div class="exp-list">
             <p>
               <strong>Motion Technician, 3D designer</strong><br>
-              Sawmill Studio<br>May 2023 - Aug 2024<br>
+              Sawmill Studio<br>
+              May 2023 - Aug 2024<br>
             </p>
             <p>
               <strong>Team Leader, UI/UX Designer, Developer</strong><br>
-              Emerging Media Lab
-              <br>May 2022 - Aug 2024<br>
+              UBC Emerging Media Lab<br>
+              May 2022 - Aug 2024<br>
             </p>
             <p>
               <strong>3D Game Artist</strong><br>
-              UBC Faculty of Forestry 
-              <br>May 2022 - Aug 2022<br>
+              UBC Faculty of Forestry<br>
+              May 2022 - Aug 2022<br>
             </p>
           </div>
           <img class="vectorlineside" alt="" src="./public/vector-3.svg" />
@@ -86,14 +88,25 @@
         </div>
         <div class="award">
           <header>
-            AWARDS
+            AWARDS & EDUCATIONS
           </header>
           <div class="awd-list"> 
             <p>
               <strong>Kirk Karasin Memorial Award in Computer Science</strong>
               <br>UBC Emerging Media Lab
-              <br> August 2024
+              <br> August 2024<br>
             </p>
+            <p>
+              <strong>Bachelor of Science: Cognitive Systems</strong>
+              <br>University of British Columbia
+              <br> May 2024<br>
+            </p>
+            <p>
+              <strong>Exchange Term</strong>
+              <br>Seoul National Univeristy
+              <br> Aug - Dec 2023<br>
+            </p>
+
           </div>
       
         </div> 
@@ -120,36 +133,37 @@
       
 
       <div class="projectpage" id="projects">
-
         <div class="head">
           <header> Selected Works:</header>
         </div>
-        <div class="project-titles">
+
+        <div class="project-title-images">
+          <div class="project">
+            <a href="jis.html" class="jis">Judicial Interrogatory Simulator↗
+              <div class="description">
+                <p>Web & VR | AI | UX/UI | 3D</p>
+              </div>
+            </a>
+          </div>
           <div class="project">
             <a href="vr.html" class="vr_paintball">VR Paintball Experience↗
             <div class="description">
               <p>VR | UX/UI | 3D</p>
             </div>
-          </a>
+            </a>
           </div>
+
           <div class="project">
-          <a href="metahuman.html" class="shakespeare_ar">Shakespeare MetaHuman AR Edition↗
-          <div class="description">
-            <p>AR | AI | UX/UI | 3D</p>
+            <a href="metahuman.html" class="shakespeare_ar">Shakespeare MetaHuman AR↗
+              <div class="description">
+                <p>AR | AI | UX/UI | 3D</p>
+              </div>
+            </a>
           </div>
-          </a>
         </div>
-          <div class="project">
-          <a href="jis.html" class="jis">Judicial Interrogatory Simulator↗
-          <div class="description">
-            <p>Web & VR | AI | UX/UI | 3D</p>
-          </div>
-        </a>
-        </div>
-        </div>
+
         <div class="projectimage"> 
         </div>
-      </div>
     </div>
 
 
@@ -163,12 +177,8 @@
         </div>
         <div class="down" id="scrollIndicator">
           <a class="scroll-hover-project" href="javascript:void(0);" onclick="scrollToSection('projects')">SELECTED WORKS↓</a>
-
         </div>
-
       </div>
-
-
     </div>
 
 
@@ -190,33 +200,36 @@
 
   
   <script>
-    const projectPage = document.querySelector('.projectimage');
-    const projectLinks = document.querySelectorAll('.project-titles a');
+  const projectPage = document.querySelector('.projectimage');
+  const projects = document.querySelectorAll('.project');
 
-    // Set the initial background color of the project page
-    projectPage.style.backgroundColor = 'white';
+  // Set the initial background color of the project page
+  projectPage.style.backgroundColor = 'white';
 
-    projectLinks.forEach(link => {
-      link.addEventListener('mouseover', () => {
-        // Change the background color of the project page
-        projectPage.style.backgroundImage = `url('public/${link.classList[0]}.png')`;
-        projectPage.style.backgroundSize = 'contain'; // or 'contain' or a specific size value
-
-      });
-
-      link.addEventListener('mouseout', () => {
-        // Reset the background color of the project page
-        projectPage.style.backgroundImage = '';
-        projectPage.style.backgroundColor = 'white';
-      });
+  projects.forEach(project => {
+    project.addEventListener('mouseover', () => {
+      // Change the background image based on the class of the first `<a>` inside the `.project`
+      const projectLink = project.querySelector('a');
+      projectPage.style.backgroundImage = `url('public/${projectLink.classList[0]}.png')`;
+      projectPage.style.backgroundSize = 'contain'; // Adjust as needed
+      projectPage.style.zIndex = 2; // Bring image to the front but below text/gradient
+      projectPage.style.opacity = 1; // Make the image visible
     });
 
+    project.addEventListener('mouseout', () => {
+      // Reset the background image and opacity
+      projectPage.style.backgroundImage = '';
+      projectPage.style.opacity = 0; // Hide the image
+      projectPage.style.zIndex = 0; // Send it back
+    });
+  });
 
 
 
     document.addEventListener("DOMContentLoaded", function () {
     var scrollIndicatorUp = document.querySelector(".up");
     var scrollIndicatorDown = document.querySelector(".down");
+
 
 
     window.addEventListener("scroll", function () {
@@ -252,7 +265,7 @@
 
 
     document.addEventListener("DOMContentLoaded", function () {
-      var projectTitles = document.querySelectorAll('.project-titles a');
+      var projectTitles = document.querySelectorAll('.project-title-images a');
       var scrollDiv = document.querySelector('.scroll');
 
       projectTitles.forEach(function (title) {
@@ -267,13 +280,13 @@
     });
 
     document.addEventListener("DOMContentLoaded", function () {
-    // Get the element with the "firstpage" ID (the greet div)
-    var greetSection = document.getElementById("firstpage");
+    // Get the element with the "introduction" ID (the greet div)
+    var greetscrollToSection = document.getElementById("introduction");
 
     // Check if the element is found
-    if (greetSection) {
+    if (greetscrollToSection) {
       // Calculate the offset of the element from the top of the page
-      var offsetTop = greetSection.offsetTop;
+      var offsetTop = greetscrollToSection.offsetTop;
 
       // Scroll to the element on page load
       window.scrollTo({
@@ -287,8 +300,8 @@
   const target = document.getElementById(id);
   if (target) {
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
-}
 
   </script>
 

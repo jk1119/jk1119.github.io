@@ -34,8 +34,6 @@
   }
 
 
-  
-
   .projectpage {
     scroll-snap-align: center;
 
@@ -46,10 +44,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: left; 
-        /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(1, 1, 1, 1)); */
-
-    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,227,223, 1)); */
-    /* background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(235,0,223, 1)); */
     z-index: 1;
   }
 
@@ -73,11 +67,12 @@
     width: 70%;
     height: 70%;
     top: 60%;
-    left: 71%;
+    left: 70%;
+    opacity: 0;
     transform: translate(-50%, -50%);
-    background-color:black;
     background-repeat: no-repeat;
     z-index: 1;
+    background-color: #000;
     aspect-ratio: 16 / 9; /* Adjust as needed */
 
   }
@@ -143,14 +138,19 @@
 
   }
   
-  .project-titles{
-    position: relative;
+  .project-title-images{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align projects to the left */
   }
   
   .project {
-    display: block;
+    display: block; /* Limit the clickable area to the content */
     transition: all 0.3s ease;
-    z-index: 10;
+    /* z-index: 2; */
+    padding: 10px 15px 15px 15px;
+    margin:3px;
+    margin-left: 7.5px;
 
   }
   .project a {
@@ -158,26 +158,23 @@
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    
-    display: block;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    margin:0.7%;
-    margin-left: 7.5px;
-    padding-left: 1%;
+    display: contents;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
    }
   
   .project:hover {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
-    z-index: 10;
+    background-color: black;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)); */
+    z-index: 5;
+    box-shadow: 7px 7px 2px 1px rgba(100, 100, 100, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .project:hover a {
-    
     color: white;
+    z-index: 5;
+
   }
 
   .description p{
@@ -260,13 +257,13 @@
     justify-content: center;
     align-items: left; 
     z-index: 1;
-    transform: translate(0%, -10%);
+    transform: translate(0%, 1%);
 
   }
 
   .award p {
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 15px;
     line-height: 20px;
     pointer-events: none;
 
@@ -353,30 +350,27 @@
     display: flex; /* Align all items in a row */
     align-items: center; /* Vertically center items */
   }
-  /* .scroll-info a{
-    padding: 2px 8px;   
-    text-decoration: none;
-    color: black;
-  } */
+
+
   .scroll-hover-about, .scroll-hover-project {
     text-decoration: none;
     color: #000;
     padding: 1px 3px;
     margin-left: 20px;
-
   }
   
   .scroll-hover-about:hover {
     color: white;
     background-color: #000;
     padding: 1px 3px;
+    box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.4);
 
   }
   .scroll-hover-project:hover {
     color: white;
     padding: 1px 3px;
-
     background-color: #000;
-  
+    box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.4);
+
   }
 

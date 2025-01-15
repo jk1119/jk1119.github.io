@@ -1,4 +1,4 @@
-// var links = document.querySelectorAll('.project-titles a');
+// var links = document.querySelectorAll('.project-title-images a');
 // var images = document.querySelectorAll('.image img');
 
 // links.forEach(function(link, index) {
