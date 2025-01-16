@@ -308,13 +308,12 @@
   }
   
   .scroll {
-    position: absolute;
-    top: 50%;
-    /* left:15%; */
-    text-align: right; 
-    pointer-events: none;
-
-
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Set height to full viewport for demo purposes */
+    text-align: center; /* Optional: Center text inside elements */
   }
 
   #scrollIndicator {
