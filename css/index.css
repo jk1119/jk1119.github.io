@@ -358,6 +358,23 @@
     margin-left: 20px;
   }
   
+  .view_projects {
+    margin-top: 45px;
+
+  }
+
+  .view_projects a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    padding: 1px 3px;
+  }
+
+  .view_projects:hover a {
+    color: white;
+    background-color: black;
+  }
+
   .scroll-hover-about:hover {
     color: white;
     background-color: #000;

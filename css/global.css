@@ -15,7 +15,7 @@
 body {
   margin: 0;
   line-height: normal;
-  font-size: 15px;
+  font-size: 14px;
   font-family: var(--font-primary); /* Default: Barlow Semi Condensed */
 
 }
@@ -43,6 +43,13 @@ header3 {
   pointer-events: none;
 }
 
+header4 {
+  font-family: var(--font-secondary); /* Headings: Montserrat */
+  font-size: 24px;
+  font-weight: 600;
+  pointer-events: none;
+  margin-left: 20px;
+}
 
 /* Media query for screens smaller than 852px */
 @media (min-width: 1600px) {

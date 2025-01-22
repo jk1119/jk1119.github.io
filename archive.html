@@ -1,226 +1,439 @@
-<!-- about.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/archive.css" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Archive Page</title>
-
-  </head>
-  <body>
-    <nav>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="./index.html#introduction"><header2>JIHO KIM</header2></a>
-            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
-          </li>
-          <li>
-            <a href="./index.html#about"><header2>ABOUT</header2></a>
-            <img class="vectorlines" alt="" src="./public/vector-2.svg" />
-          </li>
-          <li>
-            <a href="./archive.html"><header2>ARCHIVE</header2></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
-    
-    <div class="landingpage">
-      <div class="emptybox">
-        <img class="box motiongraphic" alt="" src="./public/motion.gif">
-        <img class="box forestry" alt="" src="./public/forestry1.jpg">
-        <img class="box Vehicles" alt="" src="./public/vehicle.jpg">
-        <img class="cubebox" alt="" src="./public/cube_box.jpg">
-</div>
-
-
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/archive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Works Page</title>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <ul>
+        <li><a href="./index.html#introduction"><header2>JIHO KIM</header2></a><img class="vectorlines" alt="" src="./public/vector-2.svg" /></li>
+        <li><a href="./index.html#about"><header2>ABOUT</header2></a><img class="vectorlines" alt="" src="./public/vector-2.svg" /></li>
+        <li><a href="./archive.html"><header2>All WORKS</header2></a></li>
+      </ul>
     </div>
+  </nav>
 
-      
-    <div class="mainpage">
-      <div class="projectimage">
-      </div>
-      <div class ="project-name">
-        <div> 
-          <p class="recent"><strong>2024</strong></p>
-          <header2 class="p_name">
-            NAME
-          </header2>
-          <header2 class="p_skill">
-            SKILLS
-          </header2>
-          <header2 class="p_type">
-            TYPE/PLACE
-          </header2>
-          <header2 class="p_more">
-            RELATED LINKS
-          </header2>
-          <img class="vectorline" alt="" src="./public/vector-3.svg" />
-          <p class="old"><strong>2019</strong></p>
+  <div class="side-menu">
+    <ul>
+      <li><a href="#" data-category="all" class="active">All</a></li>
+      <li><a href="#" data-category="3d">3D</a></li>
+      <li><a href="#" data-category="uxui">UX/UI</a></li>
+      <li><a href="#" data-category="vr/ar">XR (VR/AR)</a></li>
+      <li><a href="#" data-category="developer">Developer</a></li>
+
+    </ul>
+  </div>
+
+  <div class="container">
+    <section class="allprojects" id="allprojects">
+      <a href="#" class="project" data-category="uxui" data-id="1">
+        <div class="project-card">
+          <img class="gif-img" data-static-src="./public/project/nwhack/nwhack1.jpeg" data-gif-src="./public/project/nwhack/nwhack.gif" src="./public/project/nwhack/nwhack1.jpeg" alt="Project 1">
         </div>
-        <div>
-        <ul>
-          <div class="dropdown">
-            <a  class="poem">
-                <p class="name">
-                  Procedural Poetry Funhouse
-                </p>
-                <p class="skills">
-                  Maya, Blender, Unreal Engine
-                </p>
-                <p class="work">
-                  EML
-                </p>
-            </a>
-            <div class="dropdown-content">
-                <p>
-                  Project with EML. Worked as the 3D artist and front-end designer for the project. 
-                </p>
-            </div>
-
-          </div>
-          <div  class="more_2">
-            <a href='https://eml.ubc.ca/projects/procedural-poetry-playhouse/'> LINK</a>
+        <header4>Spotlight App</header4>
+        <div class="archive-description">
+          <p>UX/UI | NwHackathon</p>
+          <p>Designed an event app that promotes local events or activities. This includes promoting trivia night, fundrasiers, and new menus.</p>
         </div>
+      </a>
 
-          <div class="dropdown">
-            <a  class="Sawmil">
-              <p class="name">
-                Sawmil Motion Library 
-              </p>
-              <p class="skills">
-                MOCAP, Maya
-              </p>
-              <p class="work">
-                Sawmil Studio
-              </p>
-            </a>
-            <div class="dropdown-content">
-              <p>
-                Participated as a Motion Technician and 3D designer. Created 3D custom model.
-              </p>
-            </div>
-          </div>
+      <!-- <a href="#" class="project" data-category="3d" data-id="10">
+        <div class="project-card">
+          <img src="./public/cube.jpg" alt="Project 10">
+        </div>
+        <header4>MOCAP Model</header4>
+        <div class="archive-description">
+          <p>3D | Sawmill Studio Inc</p>
+          <p>Created customized models for motion capture.  <br><br>Contact to view this work</p>
+        </div>
+      </a> -->
 
-          <div class="dropdown">
-            <a href='https://drive.google.com/drive/folders/1jDHHQcavsnovct-UwfDMF7d0MjVXIuFF?usp=sharing' class="forestry">
-              <p class="name">
-                Gamifying Forestry↗
-              </p>
-              <p class="skills">
-                Maya, Blender
-              </p>
-              <p class="work">
-                EML
-              </p>
-            </a>
-            <div class="dropdown-content">
-              <p>
-                Project with EML. Worked as the 3D artist and designed mutliple UBC elements for the project. Many of these elements were resused for the VR Paintball Experience project.
-              </p>
-            </div>
-          </div>
+      <!-- Project 1 -->
+      <a href="#" class="project" data-category="uxui, 3d, vr/ar" data-id="3">
+        <div class="project-card">
+          <img class="gif-img" data-static-src="./public/project/poetry/building1.jpeg" data-gif-src="./public/project/poetry/poetry.gif" src="./public/project/poetry/building1.jpeg" alt="Project 1">
+        </div>
+        <header4>Procedural Poetry Funhouse</header4>
+        <div class="archive-description">
+          <p>UX/UI | 3D | VR</p>
+          <p>The Procedural Poetry Funhouse is a VR experience that provides an interactive experience 
+            allowing creative writing students to physically interact and visually explore their poetry</p>
+        </div>
+      </a>
 
-          <div  class="more">
-            <a href='https://eml.ubc.ca/projects/gamifying-forestry/'> LINK</a>
-          </div>
+      <!-- Project 2 -->
+      <a href="jis.html"  class="project" data-category="3d, uxiui, vr/ar, developer" data-id="4">
+        <div class="project-card">
+          <img src="./public/jis.png" alt="Project 4">
+        </div>
+        <header4>Judicial Interrogatory Simulator★</header4>
+        <div class="archive-description">
+          <p>UX/UI | 3D | WEB & VR | DEVELOPER</p>
+          <p>Web and VR application simulating moot court with AI judge for law students to practice their sessions</p>
+        </div>
+      </a>
 
-          
-          <div class="dropdown">
-            <a href='https://drive.google.com/drive/folders/1-lIvvBlOpL9-n83EKDJV8GnHs7Ru5gpU?usp=sharing' class="Vehicles">
-              <p class="name">
-                3D Vehicles Models↗
-              </p>
-              <p class="skills">
-                Maya
-              </p>
-              <p class="work">
-                Personal
-              </p>
-            </a>
-            <div class="dropdown-content">
-              <p>
-                3D models Works: Different vehicles from car, bike, crane, hydro-engine
-              </p>
-            </div>
-          </div>
-          
-          <div class="dropdown">
-            <a href='https://drive.google.com/drive/folders/1t1FDWEkTx1EAIqi4ilGGvH-RjUm2GPDR?usp=sharing' class="motiongraphic">
-              <p class="name">
-                Motion Graphics ADS↗
-              </p>
-              <p class="skills">
-                Adobe AfterEffect
-              </p>
-              <p class="work">
-                Personal  
-              </p>
-            </a>
-            <div class="dropdown-content">
-              <p>
-                Created ADs using AfterEffect to create different motion graphics effects. Features Tims Hortons commerical.
-              </p>
-            </div>
-          </div>
-          
-        </ul>
-      </div>
+      <!-- Project 3 -->
+      <a href="metahuman.html" class="project" data-category="vr/ar" data-id="5">
+        <div class="project-card">
+          <img src="./public/shakespeare_ar.png" alt="Project 5">
+        </div>
+        <header4>Shakespeare MetaHuman AR★</header4>
+        <div class="archive-description">
+          <p>3D | AR </p>
+          <p>Research project experimenting with Unreal's MetaHuman with AR.</p>
+        </div>
+      </a>
 
+      <!-- Project 4 -->
+      <a href="vr.html" class="project" data-category="vr/ar, 3d, developer" data-id="6">
+        <div class="project-card">
+          <img src="./public/vr_paintball.png" alt="Project 6">
+        </div>
+        <header4>VR Paintball Experience★</header4>
+        <div class="archive-description">
+          <p>VR | 3D | DEVELOPER</p>
+          <p>VR paintball experience centered on UBC spirit, allowing users to explore landmarks
+            through interactive gameplay incorporated with UBC community.</p>
+        </div>
+      </a>
+
+      <a href="#" class="project" data-category="3d" data-id="10">
+        <div class="project-card">
+          <img src="./public/cube.jpg" alt="Project 10">
+        </div>
+        <header4>MOCAP Model</header4>
+        <div class="archive-description">
+          <p>3D | Sawmill Studio Inc</p>
+          <p>Created customized models for motion capture.  <br><br>Contact to view this work</p>
+        </div>
+      </a>
+
+      <!-- Project 5 -->
+      <a href="#" class="project" data-category="3d" data-id="7">
+        <div class="project-card">
+          <img class="gif-img" data-static-src="./public/project/forestry/ubc_sign.png" data-gif-src="./public/project/forestry/forestry.gif" src="./public/project/forestry/ubc_sign.png" alt="Project 1">
+        </div>
+        <header4>Gamifying Forestry</header4>
+        <div class="archive-description">
+          <p>3D</p>
+          <p>Created forestry and UBC-related 3D assets inspired by Minecraft to be used for the Minetest world.</p>
+        </div>
+      </a>
+
+      <!-- Project 6 -->
+      <a href="#" class="project" data-category="3d" data-id="8">
+        <div class="project-card">
+          <img class="gif-img" data-static-src="./public/project/vehicle/bike_2.jpg" data-gif-src="./public/project/vehicle/vehicle.gif" src="./public/project/vehicle/bike_2.jpg" alt="Project 1">
+        </div>
+        <header4>3D Vehicle</header4>
+        <div class="archive-description">
+          <p>3D</p>
+          <p>Models of realistic vehicle assets using Maya</p>
+        </div>
+      </a>
+
+      <!-- Project 7 -->
+      <a href="#" class="project" data-category="" data-id="9">
+        <div class="project-card">
+          <img class="gif-img" data-static-src="./public/project/other/static_tims.jpeg" data-gif-src="./public/project/other/tims.gif" src="./public/project/other/static_tims.jpeg" alt="Project 1">
+        </div>
+        <header4>Tim Horton's Ad: Motion Graphic</header4>
+        <div class="archive-description">
+          <p>Motion Graphics</p>
+          <p>Tim Horton's commerical with motion graphics using Adobe AfterEffects. </p>
+        </div>
+      </a>
+
+
+
+      <!-- Project 8 -->
+
+    </section>
+  </div>
+
+  <footer>
+    <div class="contacts">
+      <ul>
+        <li>
+          <img class="icon" alt="" src="./public/email_icon.svg" />
+          <a href="mailto:jiho.5640@gmail.com">EMAIL</a>
+        </li>
+        <li>
+          <img class="icon" alt="" src="./public/linkedin_icon.svg" />
+          <a href="https://linkedin.com/in/jiho-kim-595521282">LINKEDIN</a>
+        </li>
+      </ul>
     </div>
-    <footer>
-      <div class="contacts">
-        <ul>
-          <li>
-            <img class="icon" alt="" src="./public/email_icon.svg" />
-            <a href="mailto:jiho.5640@gmail.com">EMAIL</a>
-          </li>
-          <li>
-            <img class="icon" alt="" src="./public/linkedin_icon.svg" />
-            <a href="https://linkedin.com/in/jiho-kim-595521282">LINKEDIN</a>
-          </li>
-        </ul>
-      <div>
-    </footer>
-  </body>
+  </footer>
+
+  <div id="side-window" class="side-window">
+    <div class="side-window-content">
+      <div class="side-window-close" id="close-window">&times;</div>
+      <div class="side-window-left" id="side-window-left">
+        <div class="image-slider">
+          <img src="image1.gif" alt="image 1" id="side-image-1">
+          <img src="image2.jpg" alt="image 2" id="side-image-2">
+          <img src="image3.jpg" alt="image 3" id="side-image-3">
+          <img src="image4.png" alt="image 4" id="side-image-4">
+          <img src="image5.jpg" alt="image 5" id="side-image-5">
+          <img src="image6.jpg" alt="image 6" id="side-image-6">
+        </div>
+      </div>
+      <div class="side-window-right">
+        <h2 id="side-title">Project Title</h2>
+        <p id="side-description">Fixed Description of the Project</p>
+      </div>
+    </div>
+  </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var boxshow = document.querySelector(".box");
-
-        document.querySelector(".box").addEventListener("mouseover", function () {
-          boxshow.style.opacity = 1;
-        });
-
-        document.querySelector(".box").addEventListener("mouseout", function () {
-          boxshow.style.opacity = 0;
-        });
-      });
-
-
-      var boxshow = document.querySelector(".cubebox");
-for (let className of ["motiongraphic", "forestry", "Vehicles"]) {
-    document.querySelector("a."+className).addEventListener("mouseover", function () {
-        boxshow.style.opacity = 0;
-        document.querySelector("img."+className).style.opacity = 1;
-    });
     
-    document.querySelector("a."+className).addEventListener("mouseout", function () {
-        boxshow.style.opacity = 1;
-        document.querySelector("img."+className).style.opacity = 0;
-    });
-}
-  </script>
+// Get all project images
+const projectImages = document.querySelectorAll('.gif-img');
 
+
+// Loop through each image and add hover event listeners
+projectImages.forEach(image => {
+  // Hover in: Play the GIF
+  image.addEventListener('mouseover', () => {
+    const gifSrc = image.getAttribute('data-gif-src'); // Get GIF source from the data attribute
+    image.src = gifSrc; // Change the image to the GIF
+  });
+
+  // Hover out: Reset the GIF to the first frame (static image)
+  image.addEventListener('mouseout', () => {
+    const staticSrc = image.getAttribute('data-static-src'); // Get static image source from data attribute
+    image.src = staticSrc; // Change the image to the static first frame
+  });
+});
+
+    // Category filter functionality
+    const categoryLinks = document.querySelectorAll('.side-menu a');
+    const projects = document.querySelectorAll('.allprojects .project');
   
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        categoryLinks.forEach(link => link.classList.remove('active'));
+        e.target.classList.add('active');
+  
+        const selectedCategory = e.target.getAttribute('data-category');
+  
+        projects.forEach(project => {
+          const projectCategories = project.getAttribute('data-category').split(',').map(cat => cat.trim());
+  
+          if (selectedCategory === 'all' || projectCategories.includes(selectedCategory)) {
+            project.style.display = 'block';
+          } else {
+            project.style.display = 'none';
+          }
+        });
+  
+        // Close the side window when a category is selected
+        const sideWindow = document.getElementById('side-window');
+        if (sideWindow) 
+        var e = document.getElementById("side-window-left");
+        e.scrollTop = 0;
+        sideWindow.style.display = 'none';
+        var project = document.getElementById("allprojects");
+        project.scrollTop = 0;
+      });
+    });
+  
+    // Side window functionality
+    const sideWindow = document.getElementById('side-window');
+    const closeWindowButton = document.getElementById('close-window');
+  
+    // Add the project data
+    const projectData = {
+      1: {
+        title: "Spotlight",
+        images: ["./public/project/nwhack/Mockup 9.png", "./public/project/nwhack/Mockup 6.png", "./public/project/nwhack/user_page.png", "./public/project/nwhack/manager_page.png", "./public/project/nwhack/runthrough.gif",  "./public/project/nwhack/assets.png"],
+        description: {
+          summary: "Why miss out on local events and activities? Spotlight connects you to nearby happenings, building community while offering exclusive perks. Support local, discover new favorites, and stay connected!",
+          problem: "We noticed a gap in current digital apps for discovering local happenings—while platforms like Instagram and Eventbrite offer glimpses into events, they lack a centralized, up-to-date source for ongoing events or hidden gems.",
+          solution: "Spotlight fills this gap by creating a dedicated platform where local vendors and businesses can sponsor events and locals can easily find ongoing activites and events near them.",
+          mission: "",
+          work: "I designed the web UI mobile for this application. Taken reference to popular food delivery appes. Designed and made with Figma",
+          tag: "UX/UI",
+          workdate: "NwHackathon 2025",
+          link: "https://www.figma.com/design/dNo4y2jPU6lpzOicZKmfKl/NwHackathon-figma-prototype?node-id=13-14&t=tkxObzlACUhPCa7M-1",
+          customTextBeforeLink: "Figma: Click here to view file↗",
+          comment:""
 
+        }
+      },
+      10: {
+        title: "MOCAP Model",
+        images: ["./public/cube.jpg", "./public/project/other/blank.png", "./public/project/other/blank.png", "./public/project/other/blank.png", "./public/project/other/blank.png", "./public/project/other/blank.png"],
+        description: {
+          summary: "Created and designed models for Sawmill Studios and PCCA",
+          problem: "",
+          solution: "",
+          mission: "",
+          work: "I took and designed 2D design model and modeled it into high-fidelity 3D model that was ready to be rigged",
+          tag: "3D",
+          workdate: "Sawmill Studio, Dec 2024 - Aug 2025",
+          link: "",
+          customTextBeforeLink: "",
+          comment: "Contact to view the work"
+
+        }
+      },
+      3: {
+        title: "Procedural Poetry Funhouse",
+        images: ["./public/project/poetry/building1.jpeg", "./public/project/poetry/building2.png", "./public/project/poetry/stairs.png", "./public/project/poetry/trees.jpeg", "./public/project/poetry/tree2.2.png", "./public/project/poetry/interior.jpeg"],
+        description: {
+          summary: "This VR application presents new form of visual poetry with new immersive poetry writting tool mixed with AI mood perspective tool and historical elements. Collaboration with UBC Creative Faculy's PIs, aimed to create an experience that brings new life to visual poetry through VR",
+          problem: "",
+          solution: "",
+          mission: "",
+          work: "Assigned as UX/UI designer, I worked on bringing in 3D elements and visuals from resourcing and creating from references. Further assisted in development with working on the VR environment and rigging custom cat hands for the experience",
+          tag: "3D, UX/UI, VR",
+          workdate: "EML, May 2024 - Aug 2024",
+          link: "https://eml.ubc.ca/projects/procedural-poetry-playhouse/",
+          customTextBeforeLink: "EML: Click here to learn more & watch DEMO",
+          comment: ""
+        }
+      }, 
+      7: {
+        title: "Gamifying Forestry",
+        images: ["./public/project/forestry/ubc_sign.png", "./public/project/forestry/waterfountain.png", "./public/project/forestry/general_assets.png", "./public/project/forestry/assets2.jpeg","./public/project/other/blank.png", "./public/project/other/blank.png" ],
+        description: {
+          summary: "Created a virtual class/field trip for Forestry students using Minetest. Aimed to support Forestry students during COVID to do outside lab/field trip virtually",
+          problem: "",
+          solution: "",
+          mission: "",
+          work: "Tasked with the creating custom 3D models for the project.",
+          tag: "3D",
+          workdate: "UBC Forestry & EML, May 2022 - Aug 2022",
+          link: "https://eml.ubc.ca/projects/gamifying-forestry/",
+          customTextBeforeLink: "EML: Click here to learn more",
+          comment: ""
+        }
+      },
+      8: {
+        title: "3D Vehicle",
+        images: ["./public/project/vehicle/bike_2.jpg", "./public/project/vehicle/bike_1.jpg", "./public/project/vehicle/car_1.jpg", "./public/project/vehicle/car_2.jpg", "./public/project/vehicle/crane_1.jpg", "./public/project/vehicle/crane_2.jpg"],
+        description: {
+          summary: "Personal project: worked on making realistic moving vehicles",
+          problem: "",
+          solution: "",
+          mission: "",
+          work: "Personal work",
+          tag: "3D",
+          workdate: "",
+          link: "",
+          customTextBeforeLink: "",
+          comment: ""
+        }
+      },
+      9: {
+        title: "Tim Horton's Commericial",
+        images: ["./public/project/other/tim1.jpg", "./public/project/other/tim2.jpg", "./public/project/other/tim3.jpg", "./public/project/other/tim4.jpg", "./public/project/other/blank.png", "public/project/other/entire_tim.gif"],
+        description: {
+          summary: "Personal project: created a motion graphics commercial using Adobe AfterEffects",
+          problem: "",
+          solution: "",
+          mission: "",
+          work: "Personal work",
+          tag: "Motion Graphics",
+          workdate: "",
+          link: "https://drive.google.com/file/d/1oGmjYs9kFmuTOUwl4BB74tYKuPnckipG/view?usp=sharing",
+          customTextBeforeLink: "Click to view the entire clip↗",
+          comment: ""
+        }
+      },
+
+      // Add more projects as needed
+    };
+  
+    // Open side window and load content for the clicked project
+    document.querySelectorAll('.project').forEach(project => {
+      project.addEventListener('click', () => {
+        const projectId = project.getAttribute('data-id');
+        const data = projectData[projectId];
+  
+        // Update the title
+        document.getElementById('side-title').textContent = data.title;
+  
+        // Dynamically build the description HTML
+        const descriptionHTML = `
+          <p>${data.description.summary}</p>
+          <p> ${data.description.problem}</p>
+          <p> ${data.description.solution}</p>
+          <p> ${data.description.mission}</p>
+          <p><strong>Role:</strong> ${data.description.work}</p>
+          <p><br><strong>Categories: ${data.description.tag}  </strong></p>
+          <p><strong>Date & Location: ${data.description.workdate}</strong></p>
+          <p><a href="${data.description.link}" target="_blank" style="text-decoration: none; color: black; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.color='white'; this.style.backgroundColor='black';" onmouseout="this.style.color='black'; this.style.backgroundColor='transparent';">
+            <strong>${data.description.customTextBeforeLink}</strong>
+          </a></p>
+          <strong><br>${data.description.comment}<strong>
+        `;
+
+
+        document.getElementById('side-description').innerHTML = descriptionHTML;
+  
+        // Update the images
+        data.images.forEach((image, index) => {
+          document.getElementById(`side-image-${index + 1}`).src = image;
+        });
+
+        
+  
+        // Show the side window
+        sideWindow.style.display = 'block';
+      });
+    });
+  
+closeWindowButton.addEventListener('click', () => {
+  // Hide the side window
+    var e = document.getElementById("side-window-left");
+    e.scrollTop = 0;
+    sideWindow.style.display = 'none';
+    var project = document.getElementById("allprojects");
+    project.scrollTop = 0;
+});
+
+  function updateSideWindow(projectId) {
+  const project = projectData[projectId];
+  const sideTitle = document.getElementById('side-title');
+  const sideDescription = document.getElementById('side-description');
+  const imageSlider = document.querySelector('.image-slider');
+  
+  // Update title and description
+  sideTitle.textContent = project.title;
+  sideDescription.textContent = project.description.summary || "No description available.";
+
+  // Check if there are valid images
+  const validImages = project.images.filter(img => img.trim() !== "");
+  if (validImages.length === 0) {
+    // Hide image slider if no valid images
+    imageSlider.style.display = 'none';
+  } else {
+    // Show image slider and populate images
+    imageSlider.style.display = 'flex';
+    imageSlider.innerHTML = ''; // Clear existing images
+
+    validImages.forEach(imgSrc => {
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = project.title;
+      imageSlider.appendChild(img);
+    });
+  }
+}
+
+  </script>
+  
+</body>
 </html>
