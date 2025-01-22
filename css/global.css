@@ -51,6 +51,7 @@ header4 {
   margin-left: 20px;
 }
 
+
 /* Media query for screens smaller than 852px */
 @media (min-width: 1600px) {
   body {
