@@ -134,6 +134,12 @@ footer {
   z-index: 12;
   left:0%;
 }
+
+footer p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0px 10px;
+}
   
 .contacts {
   position: relative;
@@ -141,6 +147,11 @@ footer {
   text-align: left;
   text-decoration: none;
   color: black;
+}
+
+.contacts p {
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .contacts ul {
@@ -230,4 +241,8 @@ footer {
 
 .logo img {
   max-width: 125px; /* Limit the size of the logo */
+}
+
+.rights {
+  text-align: center;
 }

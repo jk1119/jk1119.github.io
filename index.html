@@ -135,7 +135,7 @@
       <div class="projectpage" id="projects">
         <div class="head">
           <header> Selected Works:</header>
-          </p>Can't find what you need? <a href="./archive.html"><header2>View ALL WORKS↗</header2></a></p>
+          <p>Can't find what you need? <a href="./archive.html"><header2>View ALL WORKS↗</header2></a></p>
 
           <header2></header2>
         </div>
@@ -183,6 +183,7 @@
         </div>
       </div>
     </div>
+    </div>
 
 
   <footer>
@@ -198,114 +199,118 @@
         </li>
       </ul>
     <div>
+      <p>All rights reserved 2025 &copy; Jiho Kim</p>
   </footer>
+
+
+  <script>
+    const projectPage = document.querySelector('.projectimage');
+    const projects = document.querySelectorAll('.project');
+  
+    // Set the initial background color of the project page
+    projectPage.style.backgroundColor = 'white';
+  
+    projects.forEach(project => {
+      project.addEventListener('mouseover', () => {
+        // Change the background image based on the class of the first `<a>` inside the `.project`
+        const projectLink = project.querySelector('a');
+        projectPage.style.backgroundImage = `url('public/${projectLink.classList[0]}.png')`;
+        projectPage.style.backgroundSize = 'contain'; // Adjust as needed
+        projectPage.style.zIndex = 2; // Bring image to the front but below text/gradient
+        projectPage.style.opacity = 1; // Make the image visible
+      });
+  
+      project.addEventListener('mouseout', () => {
+        // Reset the background image and opacity
+        projectPage.style.backgroundImage = '';
+        projectPage.style.opacity = 0; // Hide the image
+        projectPage.style.zIndex = 0; // Send it back
+      });
+    });
+  
+  
+  
+      document.addEventListener("DOMContentLoaded", function () {
+      var scrollIndicatorUp = document.querySelector(".up");
+      var scrollIndicatorDown = document.querySelector(".down");
+  
+  
+  
+      window.addEventListener("scroll", function () {
+        // Check if the user has scrolled past the top of the page
+        if (window.scrollY > 0) {
+          scrollIndicatorUp.style.opacity = 1; // Show the "up" button
+        } else {
+          scrollIndicatorUp.style.opacity = 0; // Hide the "up" button
+        }
+  
+        // Check if the user has scrolled past the "about" section
+        var aboutSection = document.getElementById("projects");
+        if (aboutSection && window.scrollY < aboutSection.offsetTop + aboutSection.offsetHeight - window.innerHeight) {
+          scrollIndicatorDown.style.opacity = 1; // Show the "down" button
+        } else {
+          scrollIndicatorDown.style.opacity = 0; // Hide the "down" button
+        }
+      });
+    });
+  
+  
+      document.addEventListener("DOMContentLoaded", function () {
+          var catshow = document.querySelector(".catbox");
+  
+          document.querySelector(".catbox").addEventListener("mouseover", function () {
+            catshow.style.opacity = 1;
+          });
+  
+          document.querySelector(".catbox").addEventListener("mouseout", function () {
+            catshow.style.opacity = 0;
+          });
+        });
+  
+  
+      document.addEventListener("DOMContentLoaded", function () {
+        var projectTitles = document.querySelectorAll('.project-title-images a');
+        var scrollDiv = document.querySelector('.scroll');
+  
+        projectTitles.forEach(function (title) {
+          title.addEventListener('mouseover', function () {
+            scrollDiv.style.opacity = 0;
+          });
+  
+          title.addEventListener('mouseout', function () {
+            scrollDiv.style.opacity = 1;
+          });
+        });
+      });
+  
+      document.addEventListener("DOMContentLoaded", function () {
+      // Get the element with the "introduction" ID (the greet div)
+      var greetscrollToSection = document.getElementById("introduction");
+  
+      // Check if the element is found
+      if (greetscrollToSection) {
+        // Calculate the offset of the element from the top of the page
+        var offsetTop = greetscrollToSection.offsetTop;
+  
+        // Scroll to the element on page load
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth", // You can change this to "auto" for instant scrolling
+        });
+      }
+    });
+  
+    function scrollToSection(id) {
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  
+    </script>
+
   </body>
 
   
-  <script>
-  const projectPage = document.querySelector('.projectimage');
-  const projects = document.querySelectorAll('.project');
-
-  // Set the initial background color of the project page
-  projectPage.style.backgroundColor = 'white';
-
-  projects.forEach(project => {
-    project.addEventListener('mouseover', () => {
-      // Change the background image based on the class of the first `<a>` inside the `.project`
-      const projectLink = project.querySelector('a');
-      projectPage.style.backgroundImage = `url('public/${projectLink.classList[0]}.png')`;
-      projectPage.style.backgroundSize = 'contain'; // Adjust as needed
-      projectPage.style.zIndex = 2; // Bring image to the front but below text/gradient
-      projectPage.style.opacity = 1; // Make the image visible
-    });
-
-    project.addEventListener('mouseout', () => {
-      // Reset the background image and opacity
-      projectPage.style.backgroundImage = '';
-      projectPage.style.opacity = 0; // Hide the image
-      projectPage.style.zIndex = 0; // Send it back
-    });
-  });
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-    var scrollIndicatorUp = document.querySelector(".up");
-    var scrollIndicatorDown = document.querySelector(".down");
-
-
-
-    window.addEventListener("scroll", function () {
-      // Check if the user has scrolled past the top of the page
-      if (window.scrollY > 0) {
-        scrollIndicatorUp.style.opacity = 1; // Show the "up" button
-      } else {
-        scrollIndicatorUp.style.opacity = 0; // Hide the "up" button
-      }
-
-      // Check if the user has scrolled past the "about" section
-      var aboutSection = document.getElementById("projects");
-      if (aboutSection && window.scrollY < aboutSection.offsetTop + aboutSection.offsetHeight - window.innerHeight) {
-        scrollIndicatorDown.style.opacity = 1; // Show the "down" button
-      } else {
-        scrollIndicatorDown.style.opacity = 0; // Hide the "down" button
-      }
-    });
-  });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        var catshow = document.querySelector(".catbox");
-
-        document.querySelector(".catbox").addEventListener("mouseover", function () {
-          catshow.style.opacity = 1;
-        });
-
-        document.querySelector(".catbox").addEventListener("mouseout", function () {
-          catshow.style.opacity = 0;
-        });
-      });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      var projectTitles = document.querySelectorAll('.project-title-images a');
-      var scrollDiv = document.querySelector('.scroll');
-
-      projectTitles.forEach(function (title) {
-        title.addEventListener('mouseover', function () {
-          scrollDiv.style.opacity = 0;
-        });
-
-        title.addEventListener('mouseout', function () {
-          scrollDiv.style.opacity = 1;
-        });
-      });
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-    // Get the element with the "introduction" ID (the greet div)
-    var greetscrollToSection = document.getElementById("introduction");
-
-    // Check if the element is found
-    if (greetscrollToSection) {
-      // Calculate the offset of the element from the top of the page
-      var offsetTop = greetscrollToSection.offsetTop;
-
-      // Scroll to the element on page load
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth", // You can change this to "auto" for instant scrolling
-      });
-    }
-  });
-
-  function scrollToSection(id) {
-  const target = document.getElementById(id);
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  </script>
 
 </html>
