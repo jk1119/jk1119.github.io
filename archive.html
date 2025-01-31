@@ -268,7 +268,9 @@ projectImages.forEach(image => {
           tag: "UX/UI",
           workdate: "NwHackathon 2025",
           link: "https://www.figma.com/design/dNo4y2jPU6lpzOicZKmfKl/NwHackathon-figma-prototype?node-id=13-14&t=tkxObzlACUhPCa7M-1",
+          link2: "https://github.com/kibum-j-kim/spotlight",
           customTextBeforeLink: "Figma: Click here to view file↗",
+          customTextBeforeLink2: "Github: Click here to view file↗",
           comment:""
 
         }
@@ -378,6 +380,9 @@ projectImages.forEach(image => {
           <p><strong>Date & Location: ${data.description.workdate}</strong></p>
           <p><a href="${data.description.link}" target="_blank" style="text-decoration: none; color: black; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.color='white'; this.style.backgroundColor='black';" onmouseout="this.style.color='black'; this.style.backgroundColor='transparent';">
             <strong>${data.description.customTextBeforeLink}</strong>
+          </a></p>
+          <p><a href="${data.description.link2}" target="_blank" style="text-decoration: none; color: black; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.color='white'; this.style.backgroundColor='black';" onmouseout="this.style.color='black'; this.style.backgroundColor='transparent';">
+            <strong>${data.description.customTextBeforeLink2}</strong>
           </a></p>
           <strong><br>${data.description.comment}<strong>
         `;
